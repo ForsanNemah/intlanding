@@ -28,7 +28,7 @@ header("Location: tel:" . $phone);
 
 
 if($type=="wapp"){
-    header("Location:https://wa.me/".$phone);
+    header("Location:https://wa.me/".$phone."?text=".urlencode($msg));
     
     
     
