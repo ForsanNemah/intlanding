@@ -6,6 +6,9 @@ $msg=$_POST['msg'];
 $phone=$_POST['phone'];
 $type=$_POST['type'];
 
+
+//$msg="معلومات أكثر ";
+
 $result = send_with_wapi($wapi_token, $wapi_profile_id,$group_id.'@g.us', $msg);
 
 echo print_r($result) ;
