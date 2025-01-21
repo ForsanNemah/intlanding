@@ -16,7 +16,7 @@ $dr_name="
 ";
 
 $phone_main="966552462991";
-$group_id="120363369746783102";
+$group_id="120363392752347720";
 $logo="footer_logo/fitkey.jpg";
 
 $dental_services_select=1;
