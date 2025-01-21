@@ -11,13 +11,13 @@ $website_name="
 $department_name="          نادي  مفتاح اللياقة          ";
 
 $dr_name="
-الخفجي
+حفر الباطن
 
 ";
 
 $phone_main="966552462991";
 $group_id="120363392752347720";
-$logo="footer_logo/fitkey.jpg";
+$logo="footer_logo/fitkey.png";
 
 $dental_services_select=1;
 $derma_services_select=0;
