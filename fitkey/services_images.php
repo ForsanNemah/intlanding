@@ -1,170 +1,52 @@
- 
-<div id="services_id" class="mb-4"  >
-
-<br>
-<br>
+<div id="services_id" class="mb-4">
+    <br>
+    <br>
 </div>
 
+<div class="mt-4 text-center">
+    <h1></h1>
+</div>
 
-
- <div class="mt-4 text-center"  >
-
-<h1>
-
- 
-
-</h1>
-
-</div
-
-
- 
-  <section >
+<section>
     <div class="container">
+        <div class="row">
+            <?php
+            $folderPath = 'intshar_images/'; // Path to your folder
 
+            $files = scandir($folderPath); // Get all files and directories from the folder
 
+            $imageFiles = array();
 
-      <div class="row">
+            // Loop through the files and filter image files
+            foreach ($files as $file) {
+                $filePath = $folderPath . '/' . $file;
 
+                // Check if the file is a regular file and ends with a known image extension
+                if (is_file($filePath) && preg_match('/\.(jpg|jpeg|png|gif)$/i', $file)) {
+                    $imageFiles[$file] = filemtime($filePath); // Store the file and its modification time
+                }
+            }
 
+            // Sort the files by modification date (ascending order)
+            asort($imageFiles);
 
+            // Output the sorted image file names
+            foreach ($imageFiles as $image => $modificationTime) {
+                echo '
+                <div class="col-md-4" data-aos-duration="1500" data-aos="zoom-in-up">
+                    <div class="service">
+                        <img src="intshar_images/' . $image . '" alt="Service Image" class="img-fluid">
+                        <h3> </h3>
+                        <p contenteditable="true"> </p>
+                    </div>
 
-
-
-
-
-      <?php
-$folderPath = 'intshar_images/'; // Replace 'path/to/folder' with the actual path to your folder
-
-$files = scandir($folderPath); // Get all files and directories from the folder
-
-$imageFiles = array();
-
-foreach ($files as $file) {
-    $filePath = $folderPath . '/' . $file;
-    
-    // Check if the file is a regular file and ends with a known image extension
-    if (is_file($filePath) && preg_match('/\.(jpg|jpeg|png|gif)$/i', $file)) {
-        $imageFiles[] = $file;
-    }
-}
-
-// Output the image file names
-foreach ($imageFiles as $image) {
-    ///echo $image . "<br>";
-
-
-    echo '
-    
-    
-    
-    
-    <div class="col-md-4" data-aos-duration="1500" data-aos="zoom-in-up">
-    <div class="service">
-      <img src="intshar_images/'. $image.'" alt="Service 3" class="img-fluid">
-
-
-
- 
-
-
-
-
-      <h3> </h3>
-      <p contenteditable="true"> </p>
+                    <a href="#order_section" class="col-6">
+                        <button class="mb-5 btn btn-danger btn-lg pulsate">الحصول على العرض</button>
+                    </a>
+                </div>
+                ';
+            }
+            ?>
+        </div>
     </div>
-
-     <a href="#order_section" class="col-6">
-
-  <button class="mb-5 btn btn-danger btn-lg pulsate">   
-     
-الحصول على العرض
-     </button>
-    </a>
-  </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    ';
-
-/*
-    echo '
-    
-    
-    
-    
-    <a href="#order_section" class="col-12">
-
-  <button class="mb-5 btn btn-danger btn-lg">   
-     
-     اطلب الان
-     </button>
-    </a>
-   
-    
-    
-    
-    
-    ';
-*/
-
-
-
-}
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
-
-
-     
-
-
-    </div>
-  </section>
+</section>
