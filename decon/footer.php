@@ -33,10 +33,10 @@ echo $website_name;
 
         <div class="row">
         <div class="col-8 d-flex justify-content-center">
-        <p  hidden class="text-center"> 
+        <p    class="text-center"> 
 
 
-    السعودية-الاحساء
+  السعودية-الخبر
         </p>
          
         
@@ -332,9 +332,9 @@ foreach ($imageFiles as $image) {
         echo '
 
 
-          <a href="https://2moh.net/home/" style=" text-decoration: none;">
+          <a href="https://intshar.net" style=" text-decoration: none;">
 
-بواسطة  طموح  للتسويق الالكتروني 
+بواسطة قمة الانتشار للتسويق الالكتروني 
 
 
        </a>
