@@ -19,7 +19,7 @@ $phone_main="966558101234";
 $group_id="120363318595236952";
 $logo="footer_logo/decon.png";
 
-$dental_services_select=1;
+$dental_services_select=0;
 $derma_services_select=0;
 
 
