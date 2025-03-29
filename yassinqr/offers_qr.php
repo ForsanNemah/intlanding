@@ -3,7 +3,7 @@
 $wapi_profile_id="a5c869f0-f86f";
 $wapi_token="40703bb7812b727ec01c24f2da518c407342559c";
 $expected_user_message="اشتراك في عروض بهارات الياسين";
-
+$group_id="120363416424395153@g.us";
 
 $data = file_get_contents("php://input");
 
@@ -30,7 +30,7 @@ if(isset($event)){
 
     
 
-
+$offer_user_info_message="لديك عميل جيد". $senderName.$chat_id;
 
 
 
@@ -52,7 +52,7 @@ if(isset($event)){
 
    
         $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $chat_id);
-    
+        //$result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $chat_id);
     
     
     
@@ -66,6 +66,7 @@ if(isset($event)){
 
    
         $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $replay_message);
+        $result = send_with_wapi($wapi_token, $wapi_profile_id,$group_id, $replay_message);
     
         send_to_google_sheet( $senderName, $from_user);
     
