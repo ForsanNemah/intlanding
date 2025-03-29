@@ -66,7 +66,7 @@ $offer_user_info_message="لديك عميل جيد". $senderName.$chat_id;
 
    
         $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $replay_message);
-        $result = send_with_wapi($wapi_token, $wapi_profile_id,$group_id, $replay_message);
+        $result = send_with_wapi($wapi_token, $wapi_profile_id,$group_id, $offer_user_info_message);
     
         send_to_google_sheet( $senderName, $from_user);
     
