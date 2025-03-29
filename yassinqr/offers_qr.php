@@ -7,7 +7,7 @@ $expected_user_message="اشتراك في عروض بهارات الياسين";
 
 $data = file_get_contents("php://input");
 
-$message="  شكرا لتسوقك من بهارات ياسين ";
+$replay_message="  شكرا لتسوقك من بهارات ياسين ";
 $event = json_decode($data, true);
 if(isset($event)){
     //Here, you now have event and can process them how you like e.g Add to the database or generate a response
@@ -65,7 +65,7 @@ if(isset($event)){
 
 
    
-        $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $message);
+        $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $replay_message);
     
         send_to_google_sheet( $senderName, $from_user);
     
