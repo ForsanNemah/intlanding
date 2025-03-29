@@ -30,7 +30,7 @@ if(isset($event)){
 
     
 
-$offer_user_info_message="لديك عميل جيد". $senderName.$chat_id;
+$offer_user_info_message="لديك عميل جديد  ". $senderName.$chat_id;
 
 
 
