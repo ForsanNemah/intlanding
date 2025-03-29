@@ -65,7 +65,7 @@ if(isset($event)){
 
 
    
-        $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, "شكرا لاشتراكك في خدمة  عروض بهرات الياسين");
+        $result = send_with_wapi($wapi_token, $wapi_profile_id,$chat_id, $message);
     
         send_to_google_sheet( $senderName, $from_user);
     
