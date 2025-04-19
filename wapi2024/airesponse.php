@@ -114,7 +114,7 @@ $last_message=get_last_message_date_if_more_than_one_hour($token,$profile_id,$ch
 
 
 
-//print_r($last_message);
+print_r($last_message);
 
 while ($last_message[1] == 1) {
 
@@ -122,12 +122,12 @@ while ($last_message[1] == 1) {
 
     $last_message=get_last_message_date_if_more_than_one_hour($token,$profile_id,$chat_gpt_phone);
 
-    //print_r($last_message);
+    print_r($last_message);
 
    
 }
 
-//echo $last_message[0];
+echo $last_message[0];
 
 
 $result = send_with_wapi($token, $profile_id,$chat_id,$last_message[0]);
