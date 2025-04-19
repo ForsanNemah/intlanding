@@ -249,7 +249,7 @@ function get_last_message_date_if_more_than_one_hour($token,$profile_id,$chat_id
     $curl = curl_init();
     
     curl_setopt_array($curl, array(
-      CURLOPT_URL => 'https://wappi.pro/api/sync/messages/get?profile_id='.$profile_id.'&chat_id='.$chat_id.'c.us &limit=1&mark_all=true&order=desc',
+      CURLOPT_URL => 'https://wappi.pro/api/sync/messages/get?profile_id='.$profile_id.'&chat_id='.$chat_id.'&limit=1&mark_all=true&order=desc',
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_ENCODING => '',
       CURLOPT_MAXREDIRS => 10,
