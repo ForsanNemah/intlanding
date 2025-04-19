@@ -84,7 +84,7 @@ $is_forwarded = $event['messages'][0]['is_forwarded'];
 $contact_name = $event['messages'][0]['contact_name'];
 
 
-
+$is_me = trim($is_me);
 $chat_id = trim($chat_id);
 $chat_gpt_id = trim($chat_gpt_phone) . "@c.us";
 
