@@ -130,9 +130,9 @@ while ($last_message[1] == 1) {
 echo $last_message[0];
 
 
-$result = send_with_wapi($token, $profile_id,$chat_id,$last_message[0]);
+//$result = send_with_wapi($token, $profile_id,$chat_id,$last_message[0]);
 
-
+$result = send_with_wapi($token, $profile_id,$chat_id,"replay");
 
 
 
