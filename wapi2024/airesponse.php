@@ -2,8 +2,8 @@
 
 
 
-$profile_id= "a0aca078-18a5";
-$token="9f9151b56d756354026b368ecc644edec19343b4";
+$profile_id= "c5b00f3f-fbfe";
+$token="40703bb7812b727ec01c24f2da518c407342559c";
 $chat_gpt_phone="18002428478";
 
 
