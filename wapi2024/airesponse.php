@@ -107,7 +107,7 @@ $result = send_with_wapi($token, $profile_id,$chat_gpt_phone.'@c.us', $message )
 
 
 
-sleep(5);
+//sleep(5);
 
 $last_message=get_last_message_date_if_more_than_one_hour($token,$profile_id,$chat_gpt_phone);// get last message of gpt
 
@@ -130,7 +130,7 @@ while ($last_message[1] == 1) {
 echo $last_message[0];
 
 
-$result = send_with_wapi($token, $profile_id,$chat_id,$last_message[0]+"replay");
+$result = send_with_wapi($token, $profile_id,$chat_id,$last_message[0]."replay");
 
 //$result = send_with_wapi($token, $profile_id,$chat_id,"replay");
 
