@@ -93,7 +93,7 @@ if($is_me !=1 && $chat_id != $chat_gpt_phone."c.us")
 
 
 
-//$result = send_with_wapi($token, $profile_id,'966568430828@c.us', $message." my msg to ".$chat_id );
+$result = send_with_wapi($token, $profile_id,'966568430828@c.us', $message." my msg to ".$chat_id );
 
 
 
