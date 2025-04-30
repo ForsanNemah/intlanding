@@ -79,7 +79,7 @@ foreach ($imageFiles as $image) {
 
   <button class="mb-5 btn btn-danger btn-lg">   
      
-الحصول على تصميم داخلي مجاني 
+احصل على عرض مفصل لمشروعك الان
      </button>
     </a>
   </div>

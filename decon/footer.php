@@ -1,361 +1,90 @@
- 
-  <style>
-    
-  
-    
-  </style>
+<style>
+  .footer {
+    background-color: #ffffff; /* خلفية بيضاء */
+    color: #333; /* لون نص غامق */
+    padding: 40px 0;
+  }
+  .footer p {
+    margin-bottom: 10px;
+  }
+  .footer hr {
+    background-color: #ccc;
+    height: 2px;
+    width: 60%;
+  }
+  .footer .btn-primary {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+  .social-icons i {
+    margin: 0 10px;
+    font-size: 22px;
+    color: #2099f4; /* لون أيقونات التواصل الأزرق */
+  }
+  .footer a {
+    color: #2099f4;
+  }
+</style>
 </head>
 <body>
-  <footer class="mt-4 footer " id="footer_id" data-aos-duration="1500"  data-aos="zoom-in-up"> 
-    <div class="container">
-      <div class="row">
 
-
-        <div class="col-8">
-
-        <div class="row">
-        <div class="col-8 d-flex justify-content-center">
-        <p   class="text-center fs-3">   
-            
-    
-    <?php
-echo $website_name;
-    ?>
-    
-    
-    </p>
-         
-        
-      </div>
-        </div>
-
-
-
-        <div class="row">
-        <div class="col-8 d-flex justify-content-center">
-        <p    class="text-center"> 
-
-
-  السعودية-الخبر
+<footer class="footer mt-4" id="footer_id" data-aos-duration="1500" data-aos="zoom-in-up"> 
+  <div class="container">
+    <div class="row">
+      <!-- النصوص -->
+      <div class="col-md-8 text-center">
+        <p class="fs-3">
+          <?php echo $website_name; ?>
         </p>
-         
-        
-      </div>
-        </div>
 
+        <p>السعودية - الخبر</p>
 
-
-
-        
-        <div class="row">
-        <div class="col-8 d-flex justify-content-center">
-        <p contenteditable="true" class="text-center ">
-
-        <?php
-//echo $footer_des3;
-    ?>
-
-
+        <p contenteditable="true">
+          <?php // echo $footer_des3; ?>
         </p>
-         
-        
-      </div>
-        </div>
 
+        <p contenteditable="true">
+          <?php // echo $footer_des4; ?>
+        </p>
 
-
-
-
-
-        
-        <div class="row">
-        <div class="col-8 d-flex justify-content-center">
-        <p contenteditable="true" class="text-center"
-        
-        
-        <?php
-//echo $footer_des4;
-    ?>
-        
-      </p>
-
-
-       
-      
-        
-      </div>
-        </div>
-
-
-
-        <div class="row">
-        <div class="col-8 d-flex justify-content-center">
-
-
-        <a href="#order_section"  >
-
-
-        <button type="button" class="btn btn-primary rounded-pill pulsate">    
-          
-      
-      الحصول على على تصميم داخلي مجاني 
-      
-      
-      </button>
-
+        <a href="#order_section">
+          <button type="button" class="btn btn-primary rounded-pill pulsate mt-2">
+            الحصول على تصميم داخلي مجاني
+          </button>
         </a>
-     
-      
 
- 
-
-
-
-
-
-
-
-
-
-
-        
-        
+        <hr class="mt-4">
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-       
-        <div class="row">
-        <div class="col-8 d-flex justify-content-center">
-        
-
-        <hr style="height: 3px; background-color: white; width: 450px;">
-        
-      </div>
-        </div>
-        
-       
- 
-       
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="col-4"  >
-
-
-
+      <!-- الشعار -->
+      <div class="col-md-4 text-center">
         <?php
-
-        /*
-$folderPath = 'footer_logo/'; // Replace 'path/to/folder' with the actual path to your folder
-
-$files = scandir($folderPath); // Get all files and directories from the folder
-
-$imageFiles = array();
-
-foreach ($files as $file) {
-    $filePath = $folderPath . '/' . $file;
-    
-    // Check if the file is a regular file and ends with a known image extension
-    if (is_file($filePath) && preg_match('/\.(jpg|jpeg|png|gif)$/i', $file)) {
-        $imageFiles[] = $file;
-    }
-}
-
-// Output the image file names
-foreach ($imageFiles as $image) {
-    ///echo $image . "<br>";
-
-
-    echo '
-    
-    
-    
-   
-    
-    <img src="footer_logo/'.$image.'" class="img-fluid"    >
-    
-    
-    
-    
-    ';
-
-
-
-
-}
-    */
-    echo '<img src="'.$logo.'" alt="Logo" class="img-fluid logo" >';
-?>
-
-
-
-
-
-
-
-
-        
-        </div>
+          echo '<img src="'.$logo.'" alt="Logo" class="img-fluid logo">';
+        ?>
       </div>
     </div>
 
-
-
-
-
-
-
-   
-
-
-
-  <div class="row"  style="background-color: #2099f4;">
-
-
-  <div class="container" hidden>
-  <div class="row justify-content-center">
-    <div class="col-auto">
-      <a href="https://www.facebook.com/intshar.ksa" target="_blank"><i class="text-white fab fa-lg fa-facebook"></i></a>
+    <!-- روابط التواصل -->
+    <div class="row mt-3" style="background-color: #f8f8f8;" hidden>
+      <div class="col text-center social-icons py-2">
+        <a href="https://www.facebook.com/intshar.ksa" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/intshar_ksa" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-times" target="_blank"></i></a>
+        <a href="https://x.com/intshar_ksa" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="https://www.tiktok.com/@intshar_ksa" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
     </div>
-    <div class="col-auto">
-      <a href="https://www.instagram.com/intshar_ksa" target="_blank"><i class="text-white fab fa-lg fa-instagram"></i></a>
-    </div>
-    <div class="col-auto">
-      <a href="#"><i class="text-white fas fa-lg fa-times" target="_blank"></i></a>
-    </div>
-    <div class="col-auto">
-      <a href="https://x.com/intshar_ksa" target="_blank"><i class="text-white fab fa-lg fa-twitter"></i></a>
-    </div>
-    <div class="col-auto">
-      <a href="#"><i class="text-white fab fa-lg fa-snapchat" target="_blank"></i></a>
-    </div>
-    <div class="col-auto">
-      <a href="https://www.tiktok.com/@intshar_ksa" target="_blank"><i class="text-white fab fa-lg fa-tiktok"></i></a>
-    </div>
-  </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-<div class="container">
-    <div class="row justify-content-center">
-      <div class="text-center col-md-6">
- 
-
-
-      <?php 
-      if($footer_cp==1){
-
-
-        echo '
-
-
-          <a href="https://intshar.net" style=" text-decoration: none;">
-
-بواسطة قمة الانتشار للتسويق الالكتروني 
-
-
-       </a>
-
-        
-        ';
-
-
-
-      }
-
-
-?>
-     
-
-
+    <!-- الحقوق -->
+    <div class="row mt-3">
+      <div class="col text-center">
+        <?php 
+        if ($footer_cp == 1) {
+          echo '<a href="https://intshar.net" style="text-decoration: none;">بواسطة قمة الانتشار للتسويق الالكتروني</a>';
+        }
+        ?>
       </div>
     </div>
   </div>
-
-
-  </footer>
-
-  
+</footer>

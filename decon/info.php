@@ -29,14 +29,14 @@ $sheet_url="https://docs.google.com/spreadsheets/d/1Cw50UoyyK4IobN-9q5YLT7LorvrF
 
 $form1_des="
 
-عرض يوم التأسيس      
+  
+سجل بيانتك  الان 
 "; 
 $cta=0;
 $cta_text="احجز الان";
 $form1_des2="
 
-سجل بياناتك للحصول على تصميم داخلي مجاني 
-      
+   للحصول على عرض مفصل لمشروعك الان
 ";
 
 $form1_des3="
