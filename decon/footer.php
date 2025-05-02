@@ -49,7 +49,7 @@
 
         <a href="#order_section">
           <button type="button" class="btn btn-primary rounded-pill pulsate mt-2">
-            الحصول على تصميم داخلي مجاني
+          احصل على عرض مفصل لمشروعك الان
           </button>
         </a>
 

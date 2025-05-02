@@ -14,7 +14,7 @@ $result = send_with_wapi($wapi_token, $wapi_profile_id,$phone_main.'@c.us', " ق
 echo print_r($result) ;
 
 
-header("Location:https://wa.me/".$phone_main."?text=".urlencode(' معلومات اكثر عن عرض يوم التأسيس      ')           );
+header("Location:https://wa.me/".$phone_main."?text=".urlencode(' معلومات اكثر              ')           );
 
 
 
