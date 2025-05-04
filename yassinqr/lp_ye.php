@@ -128,7 +128,7 @@
     <i class="fa fa-android"></i> تحميل تطبيق الأندرويد
   </a>
 
-  <a href="https://apps.apple.com/cn/app/yassin-spices-%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86/id6743503657" class="link-button">
+  <a hidden  href="https://apps.apple.com/cn/app/yassin-spices-%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86/id6743503657" class="link-button">
     <i class="fa fa-apple"></i> تحميل تطبيق الآيفون
   </a>
 
@@ -142,14 +142,14 @@
 
   <!-- شبكات التواصل -->
   <div class="social-icons">
-    <a href="https://facebook.com/yourpage" title="فيسبوك" target="_blank"><i class="fa fa-facebook-square"></i></a>
-    <a href="https://instagram.com/yourpage" title="إنستقرام" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="https://twitter.com/yourpage" title="تويتر" target="_blank"><i class="fa fa-twitter-square"></i></a>
-    <a href="https://youtube.com/yourchannel" title="يوتيوب" target="_blank"><i class="fa fa-youtube-play"></i></a>
-    <a href="https://t.me/yourusername" title="تليجرام" target="_blank"><i class="fa fa-paper-plane"></i></a>
-    <a href="https://snapchat.com/add/yourusername" title="سناب شات" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
-    <a href="https://linkedin.com/in/yourprofile" title="لينكدإن" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-    <a href="https://tiktok.com/@yourusername" title="تيك توك" target="_blank"><i class="fa fa-music"></i></a>
+    <a href="https://www.facebook.com/Baharat.yaseen?rdid=LQcUZN3yDWSM025a&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FRcCyvwiG%2F#" title="فيسبوك" target="_blank"><i class="fa fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/yassinspices1/#" title="إنستقرام" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a hidden  href="https://twitter.com/yourpage" title="تويتر" target="_blank"><i class="fa fa-twitter-square"></i></a>
+    <a hidden href="https://youtube.com/yourchannel" title="يوتيوب" target="_blank"><i class="fa fa-youtube-play"></i></a>
+    <a hidden href="https://t.me/yourusername" title="تليجرام" target="_blank"><i class="fa fa-paper-plane"></i></a>
+    <a hidden href="https://snapchat.com/add/yourusername" title="سناب شات" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
+    <a hidden  href="https://linkedin.com/in/yourprofile" title="لينكدإن" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+    <a href="https://www.tiktok.com/@yassinspices1" title="تيك توك" target="_blank"><i class="fa fa-music"></i></a>
   </div>
 
   <footer>
