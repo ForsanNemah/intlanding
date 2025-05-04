@@ -132,9 +132,9 @@
     <i class="fa-brands fa-android"></i> تحميل تطبيق الأندرويد
   </a>
 
-  <a hidden href="https://apps.apple.com/cn/app/yassin-spices-%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86/id6743503657" class="link-button" rel="noopener noreferrer" target="_blank">
+  <!-- <a hidden href="https://apps.apple.com/cn/app/yassin-spices-%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86/id6743503657" class="link-button" rel="noopener noreferrer" target="_blank">
     <i hidden class="fa-brands fa-apple"></i> تحميل تطبيق الآيفون
-  </a>
+  </a> -->
 
   <a href="https://yassin-store.com/" class="link-button" rel="noopener noreferrer" target="_blank">
     <i class="fa-solid fa-bag-shopping"></i> دخول المتجر الإلكتروني
