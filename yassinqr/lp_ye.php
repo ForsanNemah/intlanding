@@ -4,9 +4,18 @@
   <meta charset="UTF-8">
   <title>بهارات ياسين</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- وصف SEO -->
+  <meta name="description" content="تسوق الآن من بهارات ياسين - أفضل أنواع البهارات الأصلية وتطبيق جوال للطلب بكل سهولة. توصيل سريع وجودة مضمونة.">
+  <meta name="keywords" content="بهارات, بهارات ياسين, متجر بهارات, توابل, تطبيق بهارات, yassin spices, توصيل بهارات, بهارات طبيعية">
+  <meta name="author" content="بهارات ياسين">
+
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
@@ -70,7 +79,6 @@
       background-color: #1ebe5d;
     }
 
-    /* خلفية الفوتر وأيقونات التواصل */
     .social-icons {
       margin-top: 40px;
     }
@@ -94,9 +102,6 @@
   </style>
 </head>
 
-
-
-
 <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -116,44 +121,39 @@
 </noscript>
 <!-- End Meta Pixel Code -->
 
-
 <body>
 
-  <!-- صورة الشعار -->
+  <!-- شعار -->
   <img src="logo.png" alt="شعار بهارات ياسين" class="profile-img">
   <div class="brand-name">بهارات ياسين</div>
 
   <!-- روابط -->
-  <a href="https://play.google.com/store/apps/details?id=com.yassinstore.yassin&hl=ar" class="link-button">
-    <i class="fa fa-android"></i> تحميل تطبيق الأندرويد
+  <a href="https://play.google.com/store/apps/details?id=com.yassinstore.yassin&hl=ar" class="link-button" rel="noopener noreferrer" target="_blank">
+    <i class="fa-brands fa-android"></i> تحميل تطبيق الأندرويد
   </a>
 
-  <a hidden  href="https://apps.apple.com/cn/app/yassin-spices-%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86/id6743503657" class="link-button">
-    <i class="fa fa-apple"></i> تحميل تطبيق الآيفون
+  <a hidden href="https://apps.apple.com/cn/app/yassin-spices-%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86/id6743503657" class="link-button" rel="noopener noreferrer" target="_blank">
+    <i class="fa-brands fa-apple"></i> تحميل تطبيق الآيفون
   </a>
 
-  <a href="https://yassin-store.com/" class="link-button">
-    <i class="fa fa-shopping-bag"></i> دخول المتجر الإلكتروني
+  <a href="https://yassin-store.com/" class="link-button" rel="noopener noreferrer" target="_blank">
+    <i class="fa-solid fa-bag-shopping"></i> دخول المتجر الإلكتروني
   </a>
 
-  <a href="https://wa.me/967779696117" class="link-button whatsapp-btn" target="_blank">
-    <i class="fa fa-whatsapp"></i> تواصل عبر واتساب
+  <a href="https://wa.me/967779696117" class="link-button whatsapp-btn" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
   </a>
 
-  <!-- شبكات التواصل -->
+  <!-- أيقونات التواصل -->
   <div class="social-icons">
-    <a href="https://www.facebook.com/Baharat.yaseen?rdid=LQcUZN3yDWSM025a&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FRcCyvwiG%2F#" title="فيسبوك" target="_blank"><i class="fa fa-facebook-square"></i></a>
-    <a href="https://www.instagram.com/yassinspices1/#" title="إنستقرام" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a hidden  href="https://twitter.com/yourpage" title="تويتر" target="_blank"><i class="fa fa-twitter-square"></i></a>
-    <a hidden href="https://youtube.com/yourchannel" title="يوتيوب" target="_blank"><i class="fa fa-youtube-play"></i></a>
-    <a hidden href="https://t.me/yourusername" title="تليجرام" target="_blank"><i class="fa fa-paper-plane"></i></a>
-    <a hidden href="https://snapchat.com/add/yourusername" title="سناب شات" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
-    <a hidden  href="https://linkedin.com/in/yourprofile" title="لينكدإن" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-    <a href="https://www.tiktok.com/@yassinspices1" title="تيك توك" target="_blank"><i class="fa fa-music"></i></a>
+    <a href="https://www.facebook.com/Baharat.yaseen" aria-label="فيسبوك" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/yassinspices1/" aria-label="انستقرام" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@yassinspices1" aria-label="تيك توك" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
   </div>
 
+  <!-- فوتر -->
   <footer>
-    جميع الحقوق محفوظة © بهارات ياسين
+    جميع الحقوق محفوظة © بهارات ياسين <script>document.write(new Date().getFullYear());</script>
   </footer>
 
 </body>
