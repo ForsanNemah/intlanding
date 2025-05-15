@@ -22,6 +22,9 @@ function printContactsInTable($profile_id) {
             'Content-Type: application/json',
             'Authorization: 40703bb7812b727ec01c24f2da518c407342559c'
         ),
+
+        CURLOPT_SSL_VERIFYHOST => 0,
+    CURLOPT_SSL_VERIFYPEER => false,
     ));
 
     $response = curl_exec($curl);
