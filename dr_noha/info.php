@@ -133,7 +133,7 @@ $parteners=0;
 $about_image=0;
 
 $services_list=1;
-$taby_and_tamara=0;
+$taby_and_tamara=1;
 $footer_cr=1;
 $videos=0;
 $snap_capi=0;
