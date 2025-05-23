@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>مؤسسة أجهزة الاطفاء</title>
+  <title>مؤسسة أجهزة الإطفاء</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -128,7 +128,7 @@
 
   <img src="logo.png" alt="شعار الشبكة الأولى" class="profile-img">
   
-  <div class="brand-name">مؤسسة أجهزة الاطفاء</div>
+  <div class="brand-name">مؤسسة أجهزة الإطفاء</div>
 
   <a href="https://api.whatsapp.com/send?phone=966551467050&text=لدي%20استفسار%20يرجى%20التواصل%20معي" class="link-button whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
@@ -164,7 +164,7 @@
   </div>
 
   <footer>
-    جميع الحقوق محفوظة © مؤسسة أجهزة الاطفاء
+    جميع الحقوق محفوظة © مؤسسة أجهزة الإطفاء
   </footer>
 
 </body>
