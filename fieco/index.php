@@ -130,7 +130,7 @@
   
   <div class="brand-name">مؤسسة أجهزة الإطفاء</div>
 
-  <a href="https://api.whatsapp.com/send?phone=966551467050&text=لدي%20استفسار%20يرجى%20التواصل%20معي" class="link-button whatsapp-btn" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=966509448088&text=لدي%20استفسار%20يرجى%20التواصل%20معي" class="link-button whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
   </a>
 
