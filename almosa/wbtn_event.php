@@ -9,7 +9,7 @@ $url="https://wa.me/".$phone;
 
 //echo $msg;
 
-//$result = send_with_wapi($wapi_token, $wapi_profile_id, '120363419444787628@g.us',  $msg);
+$result = send_with_wapi($wapi_token, $wapi_profile_id, '120363419444787628@g.us',  $msg);
 
 //print_r($result);
 
