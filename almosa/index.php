@@ -85,6 +85,7 @@ include "single_image.php";
   <script>
     document.getElementById("whatsapp-btn").addEventListener("click", function(event) {
       console.log("تم الضغط على زر واتساب");
+      document.getElementById("whatsapp-btn").disabled = true;
       //alert("done");
       // يمكنك هنا تتبع النقرات باستخدام TikTok أو Facebook Pixel مثلاً
       // fbq('track', 'Contact');
