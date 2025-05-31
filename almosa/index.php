@@ -91,6 +91,35 @@ include "single_image.php";
       // fbq('track', 'Contact');
       // ttq.track('Contact');
     });
+
+
+
+
+
+
+
+
+
+    document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+    const btn = document.getElementById('whatsapp-btn');
+    btn.disabled = true;                    // Disable button
+    btn.innerHTML = 'جاري تحويلك انتظر قليلا'  ;   // Optional: change button text
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
 
 </body>
