@@ -78,7 +78,7 @@ if($message=="chat_id"){
 
 
    
-    $result = send_with_wapi('9f9151b56d756354026b368ecc644edec19343b4', 'a0aca078-18a5',$chat_id, $chat_id);
+    $result = send_with_wapi('9f9151b56d756354026b368ecc644edec19343b4', '39ae5194-b57a',$chat_id, $chat_id);
 
 
 
@@ -92,17 +92,17 @@ if($message=="chat_id"){
 
 
 
-$userInfo= getUserByUserProfile($profile_id);
+//$userInfo= getUserByUserProfile($profile_id);
 
-if ($userInfo !== null) {
-$user_name= $userInfo['name'];
-$token= $userInfo['token'];
-$sheet_url= $userInfo['sheet_url'];
- $sheet_id=getSheetIdFromUrl($sheet_url);
+if (1==1) {
+user_name= "anak";
+$token= "9f9151b56d756354026b368ecc644edec19343b4";
+$sheet_url= "1vQDcGulRsCP6x7EAVDNJEp9-6Jh8dNXlhIVsoedAn3w";
+ $sheet_id="1vQDcGulRsCP6x7EAVDNJEp9-6Jh8dNXlhIVsoedAn3w";
 
  //$result = send_with_wapi('9f9151b56d756354026b368ecc644edec19343b4', 'a0aca078-18a5', '966568430828@c.us', $sheet_id);
 
- echo $user_name,'', $sheet_id,'', $sheet_id;
+ //echo $user_name,'', $sheet_id,'', $sheet_id;
 
 
 
