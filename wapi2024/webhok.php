@@ -95,7 +95,7 @@ if($message=="chat_id"){
 //$userInfo= getUserByUserProfile($profile_id);
 
 if (1==1) {
-user_name= "anak";
+$user_name= "anak";
 $token= "9f9151b56d756354026b368ecc644edec19343b4";
 $sheet_url= "1vQDcGulRsCP6x7EAVDNJEp9-6Jh8dNXlhIVsoedAn3w";
  $sheet_id="1vQDcGulRsCP6x7EAVDNJEp9-6Jh8dNXlhIVsoedAn3w";
