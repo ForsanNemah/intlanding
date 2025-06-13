@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيكو - مؤسسة أجهزة الإطفاء لأجهزة السلامة</title>
+    
+    <!-- Bootstrap 5.3 CSS RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                <i class="bi bi-shield-fill-check me-2"></i>
+                <span class="text-white">فيكو</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">مشاريعنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light ms-2" href="#contact">احصل على عرض</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="https://fieco998.com/frontend/img/home.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            
+            <div class="centered">
+                <h5 class="animate__animated animate__fadeInDown" style="color: #F1592A">
+                    مرحبا بكم في مؤسسة أجهزة الإطفاء لأجهزة السلامة - FIECO
+                </h5>
+                <h2 class="animate__animated animate__fadeInUp" style="color: #efefef">
+                    في FIECO، ندمج الخبرة الهندسية بالمعايير العالمية لنقدّم حلول حماية موثوقة تحافظ على الأرواح والممتلكات،
+                    ونلتزم بالدقة، الجودة، والدعم المستمر لما بعد التنفيذ.
+                </h2>
+                
+                <!-- Contact Info -->
+                <div class="contact-info mt-4">
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <i class="bi bi-telephone-fill text-warning me-2"></i>
+                        <span class="text-white">0509448088</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <i class="bi bi-envelope-fill text-warning me-2"></i>
+                        <span class="text-white">info@fieco998.com</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <i class="bi bi-globe text-warning me-2"></i>
+                        <span class="text-white">www.fieco998.com</span>
+                    </div>
+                </div>
+                
+                <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                    <a href="#services" class="btn btn-warning btn-lg">خدماتنا</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Section -->
+                <div class="col-md-10" data-aos="fade-right">
+                    <div class="title-about mb-4">
+                        <h2 class="display-5 fw-bold mb-3">مؤسسة أجهزة الإطفاء لأجهزة السلامة - FIECO</h2>
+                    </div>
+                    <div>
+                        <p class="lead mb-3">
+                            نحن FIECO — نبض الابتكار في عالم أنظمة الحماية.
+                            شركة سعودية بخبرة تتجاوز التوقعات، نمتلك شغفًا لصناعة بيئات أكثر أمانًا. نختص في تصميم وتنفيذ
+                            حلول مكافحة الحريق المتطورة، مستندين إلى معايير NFPA وأعلى المواصفات العالمية.
+                        </p>
+                        <p class="mb-3">
+                            منذ انطلاقتنا، كنا الشريك الذي يُعتمد عليه من قبل قطاعات حكومية وخاصة وصناعية في أنحاء المملكة.
+                            نُدير مشاريعنا بشغف هندسي، احترافية دقيقة، ورؤية واضحة نحو مستقبل آمن.
+                        </p>
+                        <p class="mb-3">
+                            <strong>رؤيتنا:</strong> أن نصبح الاسم الأول في عالم الحماية والخدمات الهندسية المتقدمة داخل المملكة وخارجها
+                        </p>
+                        <p class="mb-4">
+                            <strong>مهمتنا:</strong> أن نقدّم حلولاً موثوقة التي تحمي الأرواح والممتلكات، ونبني علاقة راسخة مع عملائنا قائمة
+                            على الثقة والتميز.
+                        </p>
+                        <div class="text-center">
+                            <a class="btn btn-primary btn-lg" href="#services">
+                                للمزيد من التفاصيل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <div>
+                        <img src="https://fieco998.com/frontend/img/logo-color.png" class="img-fluid" style="max-height: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section py-5 bg-light">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1"
+                              class="purecounter">1500</span>
+                        <p>عميل</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1"
+                              class="purecounter">1000</span>
+                        <p>مشروع</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1"
+                              class="purecounter">16</span>
+                        <p>سنة خبرة</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
+                              class="purecounter">4</span>
+                        <p>فروع</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-9 text-center text-xl-end">
+                    <h3>تواصل معنا</h3>
+                    <p>لمعلومات اكثر عن الخدمات التي نقدمها والمنتجات تفضل بالتواصل معنا<br>, نسعد بتواصلكم معنا</p>
+                </div>
+                <div class="col-xl-3 cta-btn-container text-center">
+                    <a class="cta-btn-outline align-middle" href="https://wa.me/966509448088">عبر الواتساب</a>
+                    <a class="cta-btn align-middle" href="mailto:info@fieco998.com">عبر البريد الإلكتروني</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">خدماتنا</h2>
+                    <p class="lead">حلول شاملة لمكافحة الحريق لجميع احتياجات السلامة</p>
+                </div>
+            </div>
+            
+            <!-- Fire Protection Systems -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-4 text-danger">أنظمة مكافحة الحريق</h3>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-droplet-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">مضخات الحريق والأنابيب</h5>
+                        <p>تُستخدم لنقل المياه من المصدر إلى شبكة الإطفاء، وتعد القلب النابض لنظام مكافحة الحرائق المائي</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-water text-info fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">نظام الرش الآلي بالمياه</h5>
+                        <p>يعمل على إخماد الحريق تلقائياً عند ارتفاع درجة الحرارة في المنطقة المحمية</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-hdd-rack text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">خراطيم الحريق</h5>
+                        <p>تُستخدم يدوياً من قبل الأشخاص في الموقع عند نشوب حريق ومثبتة على الجدران</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-house-fill text-warning fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">نظام إطفاء حرائق المطابخ</h5>
+                        <p>مصمم خصيصاً لمكافحة حرائق الزيوت والشحوم في المطاعم والمطابخ الصناعية</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-shield-fill-exclamation text-success fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">أنظمة الإطفاء</h5>
+                        <p>تقنيات متقدمة لإطفاء الحرائق لمختلف التطبيقات والاستخدامات</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-fire text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">طفايات الحريق</h5>
+                        <p>جميع أنواع طفايات الحريق لمختلف تصنيفات الحرائق</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-bucket-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">خزانات الفوم</h5>
+                        <p>تُستخدم لتخزين مادة الرغوة التي تُستخدم في إطفاء حرائق المواد القابلة للاشتعال</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-cloud-fill text-secondary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">نظام الإطفاء بالغاز</h5>
+                        <p>يُستخدم في المناطق الحساسة مثل غرف السيرفرات أو مراكز البيانات</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Early Fire Warning Systems -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-4 text-warning">نظام الإنذار المبكر عن الحريق</h3>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-cpu text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">لوحات التحكم</h5>
+                        <p>العقل المركزي لنظام الإنذار، تستقبل الإشارات من الكواشف وترسل أوامر التشغيل</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-volume-up-fill text-warning fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">أجهزة التنبيه الصوتية والضوئية</h5>
+                        <p>تصدر إنذارات فورية بصوت مرتفع وضوء وامض عند استشعار الخطر</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-thermometer-half text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">كواشف الدخان والحرارة</h5>
+                        <p>أجهزة ذكية تتحسس وجود دخان أو ارتفاع حرارة وتعد الإنذار الأول</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Security Systems -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-4 text-info">كاميرات المراقبة الأمنية</h3>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-camera-video-fill text-info fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">تركيب وصيانة الكاميرات الأمنية</h5>
+                        <p>تهدف إلى توفير حلول شاملة ومتكاملة في مجال الأمان والمراقبة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-gear-fill text-info fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">توصيل وبرمجة الكاميرات</h5>
+                        <p>ضمان عمل الكاميرات الأمنية بشكل كامل وفعال مع ربطها بالأنظمة الأمنية</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maintenance Services -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-4 text-success">خدمات الصيانة</h3>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-file-earmark-text text-success fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">عقود الصيانة</h5>
+                        <p>إصدار عقود صيانة شاملة لجميع المنشآت لضمان استمرارية عمل أنظمة الحماية</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-tools text-success fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">صيانة أنظمة الإطفاء والإنذار</h5>
+                        <p>متابعة دورية وإجراءات صيانة شاملة لضمان كفاءة واستمرارية العمل</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-calendar-check text-success fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-3">زيارات ربع سنوية</h5>
+                        <p>فحص شامل لنظام مكافحة الحريق كل ثلاثة أشهر للتأكد من السلامة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety Equipment -->
+            <div class="row g-4">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-4 text-secondary">أدوات ومعدات السلامة</h3>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="service-card h-100 p-3 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-person-badge text-secondary fs-2 mb-2"></i>
+                        <h6 class="fw-bold mb-2">ستر عاكسة</h6>
+                        <p class="small">ستر أمان عاكسة عالية الجودة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="service-card h-100 p-3 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-shield text-secondary fs-2 mb-2"></i>
+                        <h6 class="fw-bold mb-2">خوذات سلامة</h6>
+                        <p class="small">خوذات أمان بجميع الألوان</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="service-card h-100 p-3 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-person-workspace text-secondary fs-2 mb-2"></i>
+                        <h6 class="fw-bold mb-2">كافرولات</h6>
+                        <p class="small">عادية ومقاومة للحريق</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="service-card h-100 p-3 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-hand-thumbs-up text-secondary fs-2 mb-2"></i>
+                        <h6 class="fw-bold mb-2">قفازات سلامة</h6>
+                        <p class="small">قفازات عالية الجودة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="service-card h-100 p-3 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-boot text-secondary fs-2 mb-2"></i>
+                        <h6 class="fw-bold mb-2">سيفتي شوز</h6>
+                        <p class="small">أحذية أمان متعددة التصاميم</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="service-card h-100 p-3 bg-light rounded-3 shadow-sm text-center">
+                        <i class="bi bi-award text-secondary fs-2 mb-2"></i>
+                        <h6 class="fw-bold mb-2">شهادات السلامة</h6>
+                        <p class="small">إصدار شهادات التركيب</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">أبرز مشاريعنا</h2>
+                    <p class="lead">نحن محل ثقة أكثر من 40 جهة كبرى</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-building text-primary fs-1 mb-2"></i>
+                        <h6 class="fw-bold">جامعة حائل</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-shop text-info fs-1 mb-2"></i>
+                        <h6 class="fw-bold">أمواج مول الظهران</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-water text-primary fs-1 mb-2"></i>
+                        <h6 class="fw-bold">ميناء الدمام</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-hospital text-success fs-1 mb-2"></i>
+                        <h6 class="fw-bold">مستشفى الولادة والأطفال بحائل</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-hospital text-success fs-1 mb-2"></i>
+                        <h6 class="fw-bold">مستشفى حائل العام</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-shop text-info fs-1 mb-2"></i>
+                        <h6 class="fw-bold">دارين مول الدمام</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-shield-check text-warning fs-1 mb-2"></i>
+                        <h6 class="fw-bold">منطقة حرس الحدود</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-building text-primary fs-1 mb-2"></i>
+                        <h6 class="fw-bold">فندق راديسون بلو الرياض</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-building text-primary fs-1 mb-2"></i>
+                        <h6 class="fw-bold">جامعة اليمامة الرياض</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-shield-fill text-danger fs-1 mb-2"></i>
+                        <h6 class="fw-bold">وزارة الدفاع</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-hospital text-success fs-1 mb-2"></i>
+                        <h6 class="fw-bold">مستشفى الملك سلمان التخصصي</h6>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-card p-3 bg-white rounded-3 shadow-sm text-center">
+                        <i class="bi bi-bank text-warning fs-1 mb-2"></i>
+                        <h6 class="fw-bold">وزارة العدل</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">تواصل معنا الآن</h2>
+                    <p class="lead">نحن لا نقدم خدمة بل نحمي حياة</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-3">تواصل معنا</h4>
+                            <p>اتصل بنا اليوم للحصول على حلول مكافحة الحريق المهنية</p>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="bi bi-telephone-fill fs-3 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">الهاتف</h6>
+                                <p class="mb-0">0509448088</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope-fill fs-3 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">البريد الإلكتروني</h6>
+                                <p class="mb-0">saud@fieco998.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="bi bi-globe fs-3 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">الموقع الإلكتروني</h6>
+                                <p class="mb-0">www.fieco998.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center">
+                            <i class="bi bi-geo-alt-fill fs-3 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">المواقع</h6>
+                                <p class="mb-0">الخبر - حائل - الدمام - الرياض</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-control-lg" placeholder="الاسم" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control form-control-lg" placeholder="الموضوع" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control form-control-lg" rows="5" placeholder="رسالتك" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-warning btn-lg w-100">إرسال الرسالة</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-shield-fill-check fs-3 text-warning me-3"></i>
+                        <div>
+                            <h5 class="fw-bold mb-0">فيكو</h5>
+                            <p class="mb-0 small">مؤسسة أجهزة الإطفاء لأجهزة السلامة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-start">
+                    <p class="mb-0">&copy; 2024 فيكو. جميع الحقوق محفوظة.</p>
+                    <p class="mb-0 small">منذ 2009 - نحمي الأرواح ونحافظ على الممتلكات</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
