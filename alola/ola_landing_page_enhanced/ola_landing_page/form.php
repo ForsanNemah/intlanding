@@ -347,9 +347,14 @@ function form1_action() {
 
 
 
+fbq('track', 'Purchase', {
+  value: 149.00,
+  currency: 'SAR'
+});
 
 
 
+//alert("submit");
 
   var event_phn=document.getElementById('phn_form1').value
  
@@ -369,6 +374,8 @@ function form1_action() {
 ttq.track('CompleteRegistration', {});
 
   }
+
+
 
 
   if( snap_pixel_on==1){
