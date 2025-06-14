@@ -317,7 +317,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     <!-- Fixed WhatsApp Button for Mobile -->
     <div class="fixed-whatsapp-button">
-        <a href="https://wa.me/966539811400" target="_blank" class="btn btn-whatsapp btn-lg">
+        <a href="https://api.whatsapp.com/send?phone=966539811400&text=%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%83%D8%AB%D8%B1%20%D8%B9%D9%86%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%20%D9%81%D8%AA%D8%AD%20%D9%88%D9%83%D8%A7%D9%84%D8%A9%20%D8%AA%D8%B3%D9%88%D9%8A%D9%82%20" target="_blank" class="btn btn-whatsapp btn-lg">
             <i class="bi bi-whatsapp"></i>
         </a>
     </div>
