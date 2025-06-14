@@ -16,6 +16,8 @@ $email;
 $phone;
 $cost;
 $cost_string;
+$price;
+$signer_position;
 try {
     $response = file_get_contents($url);
 
@@ -40,6 +42,8 @@ try {
                 $cost = $row['cost'];
                 $cost_string = $row['cost_string'];
                 $contract_period = $row['contract_period'];
+                 $price = $row['price'];
+                 $signer_position=$row['signer_position'];
                 //echo "".$service.$des. $status."<br>";
 
 
