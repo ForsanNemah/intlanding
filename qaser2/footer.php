@@ -37,7 +37,7 @@
           <?php echo $website_name; ?>
         </p>
 
-        <p>السعودية - الخبر</p>
+        <p>السعودية - الرياض</p>
 
         <p contenteditable="true">
           <?php // echo $footer_des3; ?>
