@@ -127,7 +127,7 @@
 
 
                 </div>
-                <div><strong>البريد الإلكتروني:</strong>info@intshar.com</div>
+                <div><strong>البريد الإلكتروني:</strong>info@intshar.net</div>
                 <div><strong>رقم الجوال:</strong>966539811400</div>
             </div>
             <div contenteditable="true" class="mt-3 contact-info">
@@ -196,7 +196,7 @@
             <h2 class="mt-4 h5"> مدة الاتفاقية</h2>
             <p contenteditable="true">اتفق الطرفان على أن تكون مدة الاتفاقية   <?php echo $contract_period;?>    اعتبارًا من تاريخ   <?php echo $contract_date;?>.</p>
 
-            <h2 class="mt-4 h5">  قيمة الانفاقية و آلية السداد</h2> 
+            <h2 class="mt-4 h5">  قيمة الاتفاقية و آلية السداد</h2> 
 
 
             <p contenteditable="true">

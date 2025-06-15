@@ -353,7 +353,7 @@
 
 <?php include "hero.php"; ?>
 
-<?php include "form.php"; ?>
+<?php //include "form.php"; ?>
 
 
 
@@ -563,6 +563,82 @@
     <!-- Bootstrap 5.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
+  <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+
+            observer.observe(el);
+        });
+        
+
+        // Form submission
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            
+            let message = `مرحباً، أبي أحجز موعد في قصر الجمال\n\nالاسم: ${name}\nرقم الجوال: ${phone}`;
+            
+            if (service) {
+                const serviceNames = {
+                    'filler': 'الفيلر',
+                    'botox': 'البوتكس',
+                    'laser': 'الليزر',
+                    'consultation': 'استشارة عامة'
+                };
+                message += `\nالخدمة اللي أبيها: ${serviceNames[service]}`;
+            }
+            
+           // const whatsappUrl = `https://wa.me/966583090219?text=${encodeURIComponent(message)}`;
+            //window.open(whatsappUrl, '_blank');
+        });
+
+        // Smooth scrolling for anchor links
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add some initial animations
+
+        
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 100);
+                });
+            }, 500);
+        });
+
+        
+    </script>
+
 
     
 </body>

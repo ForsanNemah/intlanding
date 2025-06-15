@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>شركة الكفاء المحدودة | Alkafaa Limited Company</title>
+    <link rel="icon" type="image/png" href="assets/logo-alkafaa.png">
+    
+    <!-- Bootstrap 5.3 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #1c3f94;
+            --secondary-color: #f58426;
+            --dark-bg: #2c3e50;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+        }
+        
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        
+        .text-secondary {
+            color: var(--secondary-color) !important;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .service-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .service-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 30px 20px;
+            transform: translateY(60%);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover .service-overlay {
+            transform: translateY(0);
+        }
+        
+        .catalog-section {
+            background: var(--dark-bg);
+            color: white;
+        }
+        
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            z-index: 10;
+            transform: translateY(-50%);
+        }
+        
+        .slider-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .slider-btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        
+        .footer {
+            background: var(--dark-bg);
+            color: white;
+        }
+        
+        .clients-section {
+            background: var(--light-bg);
+        }
+        
+        .client-logo {
+            height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Loading animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Enhanced button styles */
+        .btn {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-content .lead {
+                font-size: 1rem;
+            }
+            
+            .service-overlay {
+                transform: translateY(0);
+                background: rgba(0,0,0,0.8);
+            }
+            
+            .slider-controls {
+                padding: 0 10px;
+            }
+            
+            .slider-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/logo-alkafaa.png" alt="شركة الكفاء المحدودة">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">منتجاتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Slide 1 -->
+        <div class="hero-slide active" style="background-image: url('assets/slider004.jpg')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="display-4 fw-bold mb-4">شركة الكفاء المحدودة</h1>
+                            <p class="lead mb-4">
+                                الكفاء هي مورد معتمد لجميع الشركات الكبرى مثل<br>
+                                أرامكو السعودية، سابك، سكيكو، مرافق، معادن، وشركات أخرى كثيرة
+                            </p>
+                            <a href="#about" class="btn btn-secondary btn-lg">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="background-image: url('assets/slider001.jpg')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="text-secondary fw-bold mb-3">معاً نحن</h2>
+                            <h1 class="display-3 fw-black mb-4">"معاً نزدهر"</h1>
+                            <p class="lead mb-4">
+                                الكفاء مورد موثوق لمجموعة كاملة من<br>
+                                أنابيب الفولاذ الكربوني والستانلس ستيل والتجهيزات والصفائح والصمامات
+                            </p>
+                            <a href="#about" class="btn btn-primary btn-lg">المزيد عنا</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="background-image: url('assets/slider002.jpg')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <img src="assets/logo-alkafaa-s.png" alt="شعار الكفاء" class="mb-4" style="height: 80px;">
+                            <h3 class="text-secondary fw-bold mb-3">تأسست في عام 1982</h3>
+                            <p class="lead mb-4">
+                                "مدعومة بأكثر من 4 عقود من الخبرة"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <button class="slider-btn" onclick="previousSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="slider-btn" onclick="nextSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Download Section -->
+    <section class="catalog-section section-padding">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <img src="assets/logo-alkafaa-s.png" alt="شعار الكفاء" class="mb-3" style="height: 60px;">
+                    <h6 class="text-secondary mb-2">تحميل</h6>
+                    <h2 class="mb-4">كتالوج المنتجات</h2>
+                    <p class="mb-4">نظرة عامة على الشركة والمنتجات والعملاء والمشاريع والمزيد...</p>
+                    <a href="#" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-download me-2"></i>تحميل
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h6 class="text-secondary mb-2">هدفنا هو خدمتكم</h6>
+                    <h2 class="display-5 fw-bold">روابط سريعة</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="assets/285x361-box-01.jpg" alt="حاسبة الأنابيب">
+                        <div class="service-overlay">
+                            <div class="text-center">
+                                <img src="assets/box-04.png" alt="أيقونة" class="mb-3" style="height: 40px;">
+                                <h5>حاسبة الأنابيب</h5>
+                                <p class="small">هنا يمكنك بسهولة وسرعة حساب الوزن وسماكة الجدار وحجم الأنابيب.</p>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-paper-plane me-1"></i>اذهب للصفحة
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="assets/285x361-box-02.jpg" alt="مجموعة المنتجات">
+                        <div class="service-overlay">
+                            <div class="text-center">
+                                <img src="assets/box-02.png" alt="أيقونة" class="mb-3" style="height: 40px;">
+                                <h5>مجموعة المنتجات</h5>
+                                <p class="small">الكفاء هي أكبر مورد لأنابيب الفولاذ والأنابيب والتجهيزات والفلنجات في المملكة العربية السعودية.</p>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-paper-plane me-1"></i>عرض الجداول
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="assets/285x361-box-03.jpg" alt="إرسال ملاحظات">
+                        <div class="service-overlay">
+                            <div class="text-center">
+                                <img src="assets/box-03.png" alt="أيقونة" class="mb-3" style="height: 40px;">
+                                <h5>إرسال ملاحظات</h5>
+                                <p class="small">هل لديك أي استفسارات أو أسئلة أو شكاوى؟<br>تواصل معنا!</p>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-paper-plane me-1"></i>اضغط هنا
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="assets/285x361-box-04.jpg" alt="مركز التحميل">
+                        <div class="service-overlay">
+                            <div class="text-center">
+                                <img src="assets/box-01.png" alt="أيقونة" class="mb-3" style="height: 40px;">
+                                <h5>مركز التحميل</h5>
+                                <p class="small">كتيب الشركة وجداول الأنابيب والموارد المفيدة.<br>[ ملفات PDF ]</p>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-paper-plane me-1"></i>اذهب للصفحة
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Enhanced slider functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(nextSlide, 6000);
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        // Start auto slide
+        startSlideShow();
+
+        // Pause on hover
+        document.querySelector('.hero-section').addEventListener('mouseenter', stopSlideShow);
+        document.querySelector('.hero-section').addEventListener('mouseleave', startSlideShow);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(28, 63, 148, 0.95)';
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                navbar.style.backgroundColor = 'var(--primary-color)';
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Enhanced Contact Form with validation
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = this.querySelector('input[placeholder="الاسم الكامل"]').value;
+            const email = this.querySelector('input[placeholder="البريد الإلكتروني"]').value;
+            const subject = this.querySelector('input[placeholder="الموضوع"]').value;
+            const message = this.querySelector('textarea').value;
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('يرجى إدخال بريد إلكتروني صحيح');
+                return;
+            }
+            
+            // Show success message
+            alert('شكراً لتواصلكم معنا! سنقوم بالرد عليكم في أقرب وقت ممكن.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add loading animation to service cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards and product cards
+        document.querySelectorAll('.service-card, .product-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Add hover effect to client logos
+        document.querySelectorAll('.client-logo').forEach(logo => {
+            logo.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.1)';
+            });
+            
+            logo.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h6 class="text-secondary mb-2">من نحن</h6>
+                        <h2 class="display-5 fw-bold mb-4">شركة الكفاء المحدودة</h2>
+                        <p class="lead mb-4">
+                            تأسست شركة الكفاء المحدودة في عام 1982، وهي شركة رائدة في توريد الأنابيب والتجهيزات الصناعية في المملكة العربية السعودية.
+                        </p>
+                        <p class="mb-4">
+                            نحن مورد معتمد لجميع الشركات الكبرى مثل أرامكو السعودية، سابك، سكيكو، مرافق، معادن، وشركات أخرى كثيرة. نفخر بخبرتنا التي تمتد لأكثر من 4 عقود في هذا المجال.
+                        </p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h3 class="text-primary fw-bold">40+</h3>
+                                    <p class="mb-0">سنة من الخبرة</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h3 class="text-primary fw-bold">1000+</h3>
+                                    <p class="mb-0">عميل راضٍ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-lg">تواصل معنا</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-images">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <img src="assets/head-office-626x466.jpg" alt="المكتب الرئيسي" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="assets/sales-team-626x466.jpg" alt="فريق المبيعات" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="assets/material-inspection-626x466.jpg" alt="فحص المواد" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="assets/delivery-process-2-626x466.jpg" alt="عملية التسليم" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h6 class="text-secondary mb-2">منتجاتنا</h6>
+                    <h2 class="display-5 fw-bold">مجموعة واسعة من المنتجات</h2>
+                    <p class="lead">نوفر مجموعة شاملة من الأنابيب والتجهيزات عالية الجودة</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card text-center p-4 h-100 border rounded">
+                        <img src="assets/icon-pipe.png" alt="الأنابيب" class="mb-3" style="height: 60px;">
+                        <h5 class="mb-3">الأنابيب</h5>
+                        <p class="text-muted">أنابيب الفولاذ الكربوني والستانلس ستيل بجميع الأحجام والمواصفات</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card text-center p-4 h-100 border rounded">
+                        <img src="assets/icon-fittings.png" alt="التجهيزات" class="mb-3" style="height: 60px;">
+                        <h5 class="mb-3">التجهيزات</h5>
+                        <p class="text-muted">تجهيزات الأنابيب والوصلات بمختلف الأنواع والأحجام</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card text-center p-4 h-100 border rounded">
+                        <img src="assets/icon-glange.png" alt="الفلنجات" class="mb-3" style="height: 60px;">
+                        <h5 class="mb-3">الفلنجات</h5>
+                        <p class="text-muted">فلنجات عالية الجودة لجميع التطبيقات الصناعية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card text-center p-4 h-100 border rounded">
+                        <img src="assets/icon-valve.png" alt="الصمامات" class="mb-3" style="height: 60px;">
+                        <h5 class="mb-3">الصمامات</h5>
+                        <p class="text-muted">صمامات متنوعة للتحكم في تدفق السوائل والغازات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h6 class="text-secondary mb-2">عملاؤنا</h6>
+                    <h2 class="display-5 fw-bold">شركاء النجاح</h2>
+                    <p class="lead">نفخر بثقة كبرى الشركات في المملكة</p>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-2.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-3.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-5.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-6.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-7.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-8.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-9.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-10.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-11.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="assets/شعارات-عملاء0-copy-12.jpg" alt="عميل" class="client-logo img-fluid mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h6 class="text-secondary mb-2">تواصل معنا</h6>
+                    <h2 class="display-5 fw-bold">نحن هنا لخدمتكم</h2>
+                    <p class="lead">تواصلوا معنا للحصول على أفضل الحلول لاحتياجاتكم</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-secondary"></i>
+                        </div>
+                        <h5>العنوان</h5>
+                        <p>المملكة العربية السعودية<br>الدمام - المنطقة الشرقية</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-phone fa-2x text-secondary"></i>
+                        </div>
+                        <h5>الهاتف</h5>
+                        <p>+966 13 XXX XXXX<br>+966 50 XXX XXXX</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-envelope fa-2x text-secondary"></i>
+                        </div>
+                        <h5>البريد الإلكتروني</h5>
+                        <p>info@alkafaa.com<br>sales@alkafaa.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="الاسم الكامل" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="البريد الإلكتروني" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="الموضوع" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="الرسالة" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-secondary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <img src="assets/logo-footer.png" alt="شركة الكفاء المحدودة" class="mb-3" style="height: 60px;">
+                        <p class="mb-4">
+                            شركة الكفاء المحدودة - رائدة في توريد الأنابيب والتجهيزات الصناعية في المملكة العربية السعودية منذ عام 1982.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5 class="mb-3">روابط سريعة</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white-50">الرئيسية</a></li>
+                            <li><a href="#about" class="text-white-50">من نحن</a></li>
+                            <li><a href="#services" class="text-white-50">خدماتنا</a></li>
+                            <li><a href="#products" class="text-white-50">منتجاتنا</a></li>
+                            <li><a href="#contact" class="text-white-50">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5 class="mb-3">خدماتنا</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50">حاسبة الأنابيب</a></li>
+                            <li><a href="#" class="text-white-50">مجموعة المنتجات</a></li>
+                            <li><a href="#" class="text-white-50">مركز التحميل</a></li>
+                            <li><a href="#" class="text-white-50">الدعم الفني</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5 class="mb-3">معلومات التواصل</h5>
+                        <ul class="list-unstyled">
+                            <li class="text-white-50 mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                الدمام، المملكة العربية السعودية
+                            </li>
+                            <li class="text-white-50 mb-2">
+                                <i class="fas fa-phone me-2"></i>
+                                +966 13 XXX XXXX
+                            </li>
+                            <li class="text-white-50">
+                                <i class="fas fa-envelope me-2"></i>
+                                info@alkafaa.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white-50 mb-0">
+                        &copy; 2024 شركة الكفاء المحدودة. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="display: none; z-index: 1000;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
