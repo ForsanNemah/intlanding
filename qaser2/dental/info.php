@@ -19,7 +19,7 @@ $phone_main="966552557304";
 $group_id="120363418666139003";
 $logo="footer_logo/qaser.png";
 
-$dental_services_select=0;
+$dental_services_select=1;
 $derma_services_select=0;
 
 

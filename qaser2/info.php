@@ -20,7 +20,7 @@ $group_id="120363418666139003";
 $logo="footer_logo/qaser.png";
 
 $dental_services_select=0;
-$derma_services_select=0;
+$derma_services_select=1;
 
 
 $action_url="https://script.google.com/macros/s/AKfycbyo2A7mf7X6NBp-zS0uaOh_2jwnqaWfHU1HyFDbxqoqPxktZLJon1xtdiDkEObYcnZC8Q/exec";
