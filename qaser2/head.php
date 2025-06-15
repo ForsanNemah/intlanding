@@ -178,7 +178,7 @@ a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
 r.src=n;var u=t.getElementsByTagName(s)[0];
 u.parentNode.insertBefore(r,u);})(window,document,
 'https://sc-static.net/scevent.min.js');
-
+/*
 snaptr('init', 'b2436d09-c13e-4280-9181-caa1960c5448');
 
 //snaptr('track', 'PAGE_VIEW');
@@ -190,9 +190,11 @@ snaptr('init', 'b67a49ad-d1f1-445f-941f-31aea29bc8e4');
 snaptr('init', '44ba299e-fb73-42fb-9f3f-bc272806a7ba');
 snaptr('init', 'b2436d09-c13e-4280-9181-caa1960c5448');
 snaptr('init', 'fc185b6c-2c56-4aa5-8bb6-ed5f470969fc');
-snaptr('init', 'b03a5fe0-a066-4e30-a1e9-28ab9616adf9');
+*/
+snaptr('init', ' b00f5a25-e6f1-462e-954c-e0ad9a423e01');
 snaptr('track', 'PAGE_VIEW');
-//snaptr('track', 'PURCHASE');
+snaptr('track', 'PURCHASE');
+snaptr('track', 'SIGNUP');
 
 
 
