@@ -29,14 +29,14 @@ $sheet_url="https://docs.google.com/spreadsheets/d/1Cw50UoyyK4IobN-9q5YLT7LorvrF
 
 $form1_des="
 
-  
-سجلي بيانتك  الان 
+العرض ساري لمدة 24 ساعة فقط
+
 "; 
 $cta=0;
 $cta_text="احجز الان";
 $form1_des2="
-
-للحصول على العرض
+ سجلي بياناتك الان
+ 
 ";
 
 $form1_des3="
