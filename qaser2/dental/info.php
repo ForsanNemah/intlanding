@@ -8,7 +8,7 @@ $website_name="
  
 ";
 
-$department_name="     مجمع قصر الجمال الطبي  اسنان     ";
+$department_name="         مجمع قصر الجمال الطبي  جلدية     ";
 
 $dr_name="
 
@@ -23,7 +23,7 @@ $dental_services_select=0;
 $derma_services_select=0;
 
 
-$action_url="https://script.google.com/macros/s/AKfycbyo2A7mf7X6NBp-zS0uaOh_2jwnqaWfHU1HyFDbxqoqPxktZLJon1xtdiDkEObYcnZC8Q/exec";
+$action_url="https://script.google.com/macros/s/AKfycbxvLC52NF2wum9pJhMe6xyrSC1bHjgS0PZqNDZROQlMFbkU1A-uz7b7J7ktFT9GJy7frw/exec";
 
 $sheet_url="https://docs.google.com/spreadsheets/d/1Cw50UoyyK4IobN-9q5YLT7LorvrF1xpPkV0_PTJK-MI/edit?usp=sharing";
 
