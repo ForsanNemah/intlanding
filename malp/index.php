@@ -182,6 +182,8 @@ snaptr('init', 'fa5970a7-bfee-4fa0-bfc0-8417987f9a74', {
 });
 
 snaptr('track', 'PAGE_VIEW');
+//snaptr('track', 'PAGE_VIEW');
+snaptr('track', 'PURCHASE');
 
 </script>
 <!-- End Snap Pixel Code -->
