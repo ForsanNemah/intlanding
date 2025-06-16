@@ -168,7 +168,23 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
 
 
+<!-- Snap Pixel Code -->
+<script type='text/javascript'>
+(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+{a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+r.src=n;var u=t.getElementsByTagName(s)[0];
+u.parentNode.insertBefore(r,u);})(window,document,
+'https://sc-static.net/scevent.min.js');
 
+snaptr('init', 'fa5970a7-bfee-4fa0-bfc0-8417987f9a74', {
+'user_email': '__INSERT_USER_EMAIL__'
+});
+
+snaptr('track', 'PAGE_VIEW');
+
+</script>
+<!-- End Snap Pixel Code -->
 
 
 
