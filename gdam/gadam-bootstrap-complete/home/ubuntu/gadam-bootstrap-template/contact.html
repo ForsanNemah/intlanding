@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gadam Fire Department</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Gadam Fire Department" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteer.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-header-content">
+                            <h1 class="page-title">Contact Us</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Section -->
+        <section class="contact-section py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-form-section">
+                            <h3 class="mb-4">Send Us a Message</h3>
+                            <form id="contactForm" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="contactName" name="contactName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="contactPhone" name="contactPhone">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactSubject" class="form-label">Subject</label>
+                                        <select class="form-select" id="contactSubject" name="contactSubject" required>
+                                            <option value="">Select a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="emergency">Emergency Services</option>
+                                            <option value="volunteer">Volunteer Information</option>
+                                            <option value="training">Training Programs</option>
+                                            <option value="prevention">Fire Prevention</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info-section">
+                            <span class="section-subtitle text-primary">Contact Us</span>
+                            <h3 class="text-white mb-4">Fire Safety Assistance</h3>
+                            <p class="text-white-50 mb-4">Need emergency assistance or have questions about fire safety? Contact us using the information below. For emergencies, always dial 911 first.</p>
+                            
+                            <div class="contact-map mb-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.123456789!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNCJX!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-info-cards py-5 bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="contact-info-card text-center text-white">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5>Call Us Anytime</h5>
+                            <p class="contact-detail">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="contact-info-card text-center text-white">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email Us Anytime</h5>
+                            <p class="contact-detail">info@gadamfire.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="contact-info-card text-center text-white">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h5>Website</h5>
+                            <p class="contact-detail">www.gadamfire.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="contact-info-card text-center text-white">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5>Visit Us Anytime</h5>
+                            <p class="contact-detail">123 Fire Station Rd, City 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Hours & Emergency Info -->
+        <section class="office-hours-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Office Hours</h4>
+                            <ul class="hours-list">
+                                <li><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM</li>
+                                <li><strong>Saturday:</strong> 9:00 AM - 2:00 PM</li>
+                                <li><strong>Sunday:</strong> Closed</li>
+                                <li><strong>Emergency Services:</strong> 24/7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h4>Emergency Numbers</h4>
+                            <ul class="emergency-list">
+                                <li><strong>Fire Emergency:</strong> 911</li>
+                                <li><strong>Medical Emergency:</strong> 911</li>
+                                <li><strong>Non-Emergency:</strong> (555) 123-4567</li>
+                                <li><strong>Fire Prevention:</strong> (555) 123-4568</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>Station Locations</h4>
+                            <ul class="station-list">
+                                <li><strong>Station 1:</strong> 123 Fire Station Rd</li>
+                                <li><strong>Station 2:</strong> 456 Emergency Ave</li>
+                                <li><strong>Station 3:</strong> 789 Rescue Blvd</li>
+                                <li><strong>Headquarters:</strong> 123 Fire Station Rd</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Quick Links -->
+        <section class="faq-quick-links py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Quick answers to common questions about our services</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="faq-quick-card">
+                            <div class="faq-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h5>Fire Emergencies</h5>
+                            <p>How to report fires and what to expect from our response team.</p>
+                            <a href="faq.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="faq-quick-card">
+                            <div class="faq-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h5>Medical Services</h5>
+                            <p>Emergency medical response and first aid services we provide.</p>
+                            <a href="faq.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="faq-quick-card">
+                            <div class="faq-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5>Volunteer Program</h5>
+                            <p>Information about joining our volunteer firefighter program.</p>
+                            <a href="volunteer.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="faq-quick-card">
+                            <div class="faq-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5>Fire Prevention</h5>
+                            <p>Fire safety education and prevention programs for the community.</p>
+                            <a href="services.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3>Ready to Make a Difference? Join Our Mission Today!</h3>
+                        <p class="mb-0">Help us protect and serve our community by becoming a volunteer firefighter.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="volunteer.html" class="btn btn-light btn-lg me-3">Become a Volunteer</a>
+                        <a href="#contactForm" class="btn btn-outline-light btn-lg">Send Message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Gadam Fire Department</h5>
+                    <p>Protecting lives and property in our community for over 50 years.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="about.html" class="text-white-50">About</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="team.html" class="text-white-50">Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Fire Emergency</a></li>
+                        <li><a href="#" class="text-white-50">Medical Emergency</a></li>
+                        <li><a href="#" class="text-white-50">Rescue Operations</a></li>
+                        <li><a href="#" class="text-white-50">Prevention</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Fire Station Road, City, State 12345</li>
+                        <li><i class="fas fa-phone me-2"></i>Emergency: 911</li>
+                        <li><i class="fas fa-phone me-2"></i>Non-Emergency: (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@gadamfire.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Gadam Fire Department. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
