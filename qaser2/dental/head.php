@@ -193,8 +193,8 @@ snaptr('init', 'fc185b6c-2c56-4aa5-8bb6-ed5f470969fc');
 */
 snaptr('init', ' b00f5a25-e6f1-462e-954c-e0ad9a423e01');
 snaptr('track', 'PAGE_VIEW');
-snaptr('track', 'PURCHASE');
-snaptr('track', 'SIGNUP');
+//snaptr('track', 'PURCHASE');
+//snaptr('track', 'SIGNUP');
 
 
 
