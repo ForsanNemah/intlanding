@@ -89,10 +89,18 @@
             </div>
 
 
-            <div class="mb-3">
- 
-              <input id="phn_form1" type="number" class="form-control" name="phone" placeholder=" رقم الجوال " required>
-            </div>
+       <div class="mb-3">
+  <input 
+    id="phn_form1" 
+    type="number" 
+    class="form-control" 
+    name="phone" 
+    placeholder="رقم الجوال" 
+    required 
+    min="500000000" 
+    max="5999999999"
+  >
+</div>
 
 
             <div class="mb-3">
