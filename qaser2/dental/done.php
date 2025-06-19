@@ -62,7 +62,7 @@
       <h1>تم التسجيل بنجاح</h1>
       <p contenteditable="true"> سيتم التواصل معكم في أسرع وقت </p>
       
-      <a href="https://wa.me/<?php echo $phone_main ?>" target="_blank" class="whatsapp-btn">
+      <a  hidden href="https://wa.me/<?php echo $phone_main ?>" target="_blank" class="whatsapp-btn">
         تواصل معنا عبر واتساب
       </a>
 
