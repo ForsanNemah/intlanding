@@ -8,7 +8,7 @@ $website_name="
  
 ";
 
-$department_name="         مجمع قصر الجمال الطبي  جلدية     ";
+$department_name="         مجمع قصر الجمال الطبي  اسنان     ";
 
 $dr_name="
 
