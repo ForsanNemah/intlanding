@@ -166,7 +166,7 @@
   <div class="brand-name">بهارت ياسين فرع الدمام</div>
 
   <!-- روابط -->
-  <a id="whatsapp-btn" href="https://wa.me/966509403756" class="link-button whatsapp-btn" target="_blank" rel="noopener noreferrer">
+  <a id="whatsapp-btn" href="https://wa.me/966500303596" class="link-button whatsapp-btn" target="_blank" rel="noopener noreferrer">
     <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
   </a>
 
