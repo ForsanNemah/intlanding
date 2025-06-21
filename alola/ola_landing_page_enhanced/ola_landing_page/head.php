@@ -91,7 +91,7 @@ echo $website_name;
 <script>
 
 	var snap_pixel_on=1;
-	var tiktok_pixel_on=0;
+	var tiktok_pixel_on=1;
 
 
 
@@ -102,7 +102,7 @@ echo $website_name;
 
 	
 
-	if( tiktok_pixel_on==0){
+	if( tiktok_pixel_on==1){
 
 
 		!function (w, d, t) {
@@ -112,6 +112,25 @@ echo $website_name;
 		  ttq.load('CN6FRCRC77UC2DCHBISG');
 		  ttq.page();
 		}(window, document, 'ttq');
+
+
+		/*
+
+		ttq.track('Purchase', {
+  value: 99.99, // قيمة الطلب
+  currency: 'USD', // العملة (مثال: 'USD' أو 'SAR')
+  contents: [
+    {
+      content_id: 'product123',
+      content_name: 'Marcafe Coffee',
+      quantity: 1,
+      price: 149.00
+    }
+  ],
+  content_type: 'product'
+});event_email
+*/
+
 
 
 	}

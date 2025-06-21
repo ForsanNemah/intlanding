@@ -362,6 +362,28 @@ fbq('track', 'Purchase', {
 
 
 
+
+
+ttq.track('Purchase', {
+  value: 99.99, // قيمة الطلب
+  currency: 'USD', // العملة (مثال: 'USD' أو 'SAR')
+  contents: [
+    {
+      content_id: 'product123',
+      content_name: 'Marcafe Coffee',
+      quantity: 1,
+      price: 149.00
+    }
+  ],
+  content_type: 'product'
+});event_email
+
+
+
+
+
+
+
 //alert("submit");
 
   var event_phn=document.getElementById('phn_form1').value

@@ -146,7 +146,7 @@ echo $website_name;
 		
 
 ttq.load('CUUBDIJC77U38KO2H2MG');
-		  ttq.load('CN6FRCRC77UC2DCHBISG');
+		  ttq.load('CQV6A13C77UAH29I5DK0');
 		  ttq.page();
 		}(window, document, 'ttq');
 
