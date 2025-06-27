@@ -229,6 +229,29 @@ echo 'File not found.';
 
 <script>
 
+
+
+
+
+
+try { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var w_app_form_div = document.getElementById("w_app_form");
 
 
@@ -298,11 +321,43 @@ snaptr('track','SIGN_UP', {
 
 
 
+ttq.track('Purchase', {
+  value: 99.99, // قيمة الطلب
+  currency: 'USD', // العملة (مثال: 'USD' أو 'SAR')
+  contents: [
+    {
+      content_id: 'product123',
+      content_name: 'Marcafe Coffee',
+      quantity: 1,
+      price: 149.00
+    }
+  ],
+  content_type: 'product',
+  user_properties: {
+    phone_number: '+966'+event_phn, // رقم الجوال بصيغة دولية
+    email: 'forsan20172017@gmail.com'     // البريد الإلكتروني
+  }
+});
+
+
+
+
 //alert("submited"+event_phn);
 
 
 
 
 
+}
+
+
+
+
+
+
+
+} catch (error) {
+  // الكود هنا يتنفذ فقط إذا حصل خطأ
+  console.error("🚨 حصل خطأ:", error.message);
 }
 </script>

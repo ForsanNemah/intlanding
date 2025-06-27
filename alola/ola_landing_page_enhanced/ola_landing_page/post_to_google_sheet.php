@@ -1,14 +1,37 @@
 <?php
-
+session_start();
 error_reporting(E_ERROR | E_PARSE);
 ini_set('max_execution_time', '0');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // ضروري للوصول إلى الجلسة
+
+if (isset($_SESSION['ad_source'])) {
+    //echo "📢 مصدر الإعلان المخزن هو: " . htmlspecialchars($_SESSION['ad_source']);
+} else {
+   // echo "⚠️ لا يوجد مصدر إعلان مخزن في الجلسة.";
+}
+ 
+ 
 include "info.php";
 
 $name=$_POST['name'];
 $phone=$_POST['phone'];
 $service=$_POST['service'];
 $is_w_app=$_POST['is_w_app'];
-$source=$_POST['source'];
+$source=$_SESSION['ad_source'];
 $subject=$_POST['subject'];
 $msg=$_POST['msg'];
 
@@ -18,6 +41,8 @@ $location=$_POST['location'];
 $city=$_POST['city'];
 //echo  $branch1.$branch2;
 
+
+//die;
 if (!empty($branch1)) {
 
     $branch=$branch1;
@@ -156,7 +181,7 @@ if($api_notification==1){
     
     $w_app_msg3=$w_app_msg2." مدينة   ".$city;
     
-    
+      
     $w_app_msg3 = str_replace("\n", "\\n",  $w_app_msg3);
 
     $result = send_with_wapi('40703bb7812b727ec01c24f2da518c407342559c', '73817eb8-ed42', $phone_main.'@c.us',  $w_app_msg3);
@@ -164,7 +189,7 @@ if($api_notification==1){
      print_r($result) ;
 
 
-     $result = send_with_wapi('40703bb7812b727ec01c24f2da518c407342559c', '73817eb8-ed42', '120363297529096960@g.us',  $w_app_msg3);
+     $result = send_with_wapi('40703bb7812b727ec01c24f2da518c407342559c', '73817eb8-ed42', '120363401233931054@g.us',  $w_app_msg3);
     
      print_r($result) ;
 

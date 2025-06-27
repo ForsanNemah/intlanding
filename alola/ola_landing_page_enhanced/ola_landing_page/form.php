@@ -336,6 +336,23 @@ echo '
 <script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+try {
+  // كود يحتمل الخطأ
+   
+ 
 $('#loading_gif').hide();
 
 
@@ -364,19 +381,7 @@ fbq('track', 'Purchase', {
 
 
 
-ttq.track('Purchase', {
-  value: 99.99, // قيمة الطلب
-  currency: 'USD', // العملة (مثال: 'USD' أو 'SAR')
-  contents: [
-    {
-      content_id: 'product123',
-      content_name: 'Marcafe Coffee',
-      quantity: 1,
-      price: 149.00
-    }
-  ],
-  content_type: 'product'
-});event_email
+
 
 
 
@@ -388,6 +393,47 @@ ttq.track('Purchase', {
 
   var event_phn=document.getElementById('phn_form1').value
  
+
+
+
+
+
+
+
+
+//alert(event_phn);
+
+ttq.track('Purchase', {
+  value: 99.99, // قيمة الطلب
+  currency: 'USD', // العملة (مثال: 'USD' أو 'SAR')
+  contents: [
+    {
+      content_id: 'product123',
+      content_name: 'Marcafe Coffee',
+      quantity: 1,
+      price: 149.00
+    }
+  ],
+  content_type: 'product',
+  user_properties: {
+    phone_number: '+966'+event_phn, // رقم الجوال بصيغة دولية
+    email: 'forsan20172017@gmail.com'     // البريد الإلكتروني
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -444,4 +490,16 @@ ttq.track('CompleteRegistration', {});
 
 
 }
+
+
+
+
+
+
+} catch (error) {
+  // الكود هنا يتنفذ فقط إذا حصل خطأ
+  console.error("🚨 حصل خطأ:", error.message);
+}
+
+
 </script>

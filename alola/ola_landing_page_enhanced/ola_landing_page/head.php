@@ -36,7 +36,7 @@
 
 
 <?php
-
+session_start();
 
  
 include "info.php";
@@ -367,7 +367,6 @@ var sha256 = function sha256(ascii) {
 
 
 
-
 </script>
 <noscript>
   <img height="1" width="1"
@@ -375,6 +374,26 @@ var sha256 = function sha256(ascii) {
 </noscript>
 <!-- End Facebook Pixel Code -->
 
+
+
+
+<?php
+// اقرأ قيمة ad_source_get من الرابط
+if (isset($_GET['ad_source_get'])) {
+    $ad_source = $_GET['ad_source_get'];
+
+$_SESSION['ad_source'] = $_GET['ad_source_get'];
+
+
+
+
+    //echo "مصدر الإعلان هو: " .$_SESSION['ad_source'] ;
+
+
+} else {
+    //echo "لا يوجد ad_source_get في الرابط.";
+}
+?>
 
 
 
