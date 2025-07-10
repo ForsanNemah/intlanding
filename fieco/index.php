@@ -134,7 +134,7 @@
     <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
   </a>
 
-  <a href="#" class="link-button">
+  <a href="https://fieco998.com/" class="link-button">
     <i class="fas fa-globe"></i> موقعنا الإلكتروني
   </a>
 
