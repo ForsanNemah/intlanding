@@ -203,14 +203,14 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <a href="https://iwtsp.com/966566622888" class="link-button" target="_blank" rel="noopener"><img src="images/go.jpeg" alt="Government Icon">طلبات الجهات الحكومية</a>
     <a href="https://hungerstation.com/sa-ar/restaurant/laviviane-2/al-jubail/sudayr/78053" class="link-button" target="_blank" rel="noopener"><img src="images/hunger.png" alt="HungerStation Icon">اطلب عبر هنقرستيشن</a>
     <a href="https://jahez.link/CxVavEMC8Qb" class="link-button" target="_blank" rel="noopener"><img src="images/jahez.png" alt="Jahez Icon">اطلب عبر جاهز</a>
-    <a href="https://thechefzco.app.link/rzfNYxef2Qb" class="link-button" target="_blank" rel="noopener"><img src="images/thechefz.png" alt="The Chefz Icon">اطلب عبر ذا تشيفز</a>
+    <a href="https://thechefzco.app.link/rzfNYxef2Qb" class="link-button" target="_blank" rel="noopener"><img src="images/thechefz.png" alt="The Chefz Icon">    اطلب عبر ذا شفيز  </a>
     <a href="https://mrsool.app.link/shops/937e0413ee607fe1f2e9ed7695884f14?type=service&type_name=Default" class="link-button" target="_blank" rel="noopener"><img src="images/marsol.png" alt="Mrsool Icon">اطلب عبر مرسول</a>
     <a href="https://toyou.io/merchant/833d90f2-c396-487f-a490-18c9648cb0c9" class="link-button" target="_blank" rel="noopener"><img src="images/toyou.png" alt="ToYo Icon">اطلب عبر تو يو</a>
     <a href="https://url.mykeeta.com/GoiGytwz" class="link-button" target="_blank" rel="noopener"><img src="images/keta.png" alt="Keeta Icon">اطلب عبر كيتا</a>
     <a href="https://goo.gl/maps/xFnRxLCzvgdTpe126" class="link-button" target="_blank" rel="noopener"><img src="images/gmap.png" alt="Google Maps Icon">فرع الرياض - الملقا</a>
     <a href="https://maps.app.goo.gl/AnUUn9U454c4SQna6?g_st=com.google.maps.preview.copy" class="link-button" target="_blank" rel="noopener"><img src="images/gmap.png" alt="Google Maps Icon">فرع الرياض - حطين</a>
     <a href="https://goo.gl/maps/BfpHu98zHg8g4rDGA" class="link-button" target="_blank" rel="noopener"><img src="images/gmap.png" alt="Google Maps Icon">فرع الخبر - اليرموك</a>
-    <a href="https://goo.gl/maps/wxUPD8x8kUQ9Cdvq9" class="link-button" target="_blank" rel="noopener"><img src="images/gmap.png" alt="Google Maps Icon">فرع الجبيل - الفنادق</a>
+    <a href="https://goo.gl/maps/wxUPD8x8kUQ9Cdvq9" class="link-button" target="_blank" rel="noopener"><img src="images/gmap.png" alt="Google Maps Icon">   فرع الجبيل الصناعية - الفناتير  </a>
 </div>
 
 <div class="social-footer">
