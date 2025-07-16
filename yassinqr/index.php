@@ -1,6 +1,6 @@
 <?php
 // Define the target URL
-$targetUrl = "https://www.yassinspices.com/";
+$targetUrl = "lp_ksa.php";
 
 // Redirect to the target URL
 header("Location: $targetUrl");
