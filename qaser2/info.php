@@ -121,7 +121,7 @@ $derma_services=0;
 $services2=0;
 $faq=0;
 $process=0;
-$services_images=1;
+$services_images=0;
 $footer=1;
 $footer2=0;
 $w_app_button=0;
@@ -149,7 +149,7 @@ $authorization_token = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwi
 
 
 
-$wapi_profile_id="73817eb8-ed42";
+$wapi_profile_id="48d247ab-7d7a";
 $wapi_token="40703bb7812b727ec01c24f2da518c407342559c";
 
 
