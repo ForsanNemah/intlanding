@@ -143,11 +143,24 @@
       <span class="material-icons">location_on</span>
       الخبر - الشراع
     </a>
+
+
     <a href="https://goo.gl/maps/grhVRPZcVE3QXqKU8" target="_blank"
        class="btn-location" onclick="trackViewContent()">
       <span class="material-icons">location_on</span>
       الظهران
     </a>
+
+
+
+    
+    <a href="https://goo.gl/maps/YLbGgaoAPanYBgwX9" target="_blank"
+       class="btn-location" onclick="trackViewContent()">
+      <span class="material-icons">location_on</span>
+       الخبر العزيزية (الخزامى)
+    </a>
+
+
   </div>
 
   <!-- WhatsApp Floating Button -->
