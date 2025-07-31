@@ -52,6 +52,19 @@
       left: -170px;  
     }
 
+
+    @media (max-width: 576px) {
+  .logo2 {
+    max-width: 150px;   /* تكبير الحجم في الهواتف */
+
+   
+    
+
+
+  }
+}
+
+
     .btn-location {
       position: relative;
       font-size: 1.1rem;
@@ -125,7 +138,7 @@
       }
 
       .logo2 {
-        max-width: 50px;
+        max-width: 120px;
       }
     }
   </style>
