@@ -42,15 +42,13 @@
     }
 
     /* logo2 ملتصق بالزر الأول */
-    .logo2 {
-      display: block;
-      max-width: 100px;
-      margin: 0 auto 2px auto; /* مسافة صغيرة تحت الصورة */
-      position: relative;
-      right: auto;
-      left: auto;
-      left: -170px;  
-    }
+.logo2 {
+  position: absolute;
+  top: 170px;     /* موقعه العمودي بالنسبة للزر الأول */
+  left: 10px;     /* أقصى اليسار */
+  max-width: 100px;
+  margin: 0;      /* أزل التوسيط */
+}
 
 
     @media (max-width: 576px) {
