@@ -33,14 +33,27 @@
       width: 100%;
       max-width: 500px;
       text-align: center;
+      position: relative;
     }
 
     .logo {
       max-width: 150px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* logo2 ملتصق بالزر الأول */
+    .logo2 {
+      display: block;
+      max-width: 100px;
+      margin: 0 auto 2px auto; /* مسافة صغيرة تحت الصورة */
+      position: relative;
+      right: auto;
+      left: auto;
+      left: -170px;  
     }
 
     .btn-location {
+      position: relative;
       font-size: 1.1rem;
       padding: 14px 24px;
       border-radius: 12px;
@@ -48,11 +61,8 @@
       color: white;
       font-weight: bold;
       margin: 10px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      transition: background 0.3s ease, transform 0.2s ease;
+      display: block;
+      text-align: center;
       text-decoration: none;
     }
 
@@ -63,8 +73,19 @@
       color: white;
     }
 
-    .material-icons {
+    .btn-location .material-icons {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
       font-size: 22px;
+    }
+
+    /* الصور الإضافية أسفل الأزرار */
+    .extra-image {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
     }
 
     /* Floating WhatsApp Button */
@@ -102,6 +123,10 @@
       .logo {
         max-width: 120px;
       }
+
+      .logo2 {
+        max-width: 50px;
+      }
     }
   </style>
 
@@ -129,8 +154,12 @@
 <body>
 
   <div class="card animate__animated animate__fadeInUp">
+
     <!-- Logo -->
     <img src="corno.png" alt="الشعار" class="logo" />
+
+    <!-- logo2 ملتصق بالزر الأول -->
+    <img src="logo2.png" alt="الشعار" class="logo2" />
 
     <!-- Buttons -->
     <a href="https://goo.gl/maps/h2xTTDnnjnYMVCSj9" target="_blank"
@@ -143,23 +172,20 @@
       <span class="material-icons">location_on</span>
       الخبر - الشراع
     </a>
-
-
     <a href="https://goo.gl/maps/grhVRPZcVE3QXqKU8" target="_blank"
        class="btn-location" onclick="trackViewContent()">
       <span class="material-icons">location_on</span>
       الظهران
     </a>
-
-
-
-    
     <a href="https://goo.gl/maps/YLbGgaoAPanYBgwX9" target="_blank"
        class="btn-location" onclick="trackViewContent()">
       <span class="material-icons">location_on</span>
-       الخبر العزيزية (الخزامى)
+      الخبر العزيزية (الخزامى)
     </a>
 
+    <!-- الصور الجديدة -->
+    <img src="corno1.jpg" alt="صورة إضافية 1" class="extra-image" />
+    <img src="corno2.jpg" alt="صورة إضافية 2" class="extra-image" />
 
   </div>
 
