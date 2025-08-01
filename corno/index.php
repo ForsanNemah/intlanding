@@ -188,11 +188,12 @@
       <span class="material-icons">location_on</span>
       الظهران
     </a>
-    <a href="https://goo.gl/maps/YLbGgaoAPanYBgwX9" target="_blank"
+
+    <!-- <a href="https://goo.gl/maps/YLbGgaoAPanYBgwX9" target="_blank"
        class="btn-location" onclick="trackViewContent()">
       <span class="material-icons">location_on</span>
       الخبر العزيزية (الخزامى)
-    </a>
+    </a> -->
 
     <!-- الصور الجديدة -->
     <img src="corno1.jpg" alt="صورة إضافية 1" class="extra-image" />
