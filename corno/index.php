@@ -159,6 +159,101 @@
 
     snaptr('init', '41698027-2ac5-47ce-8717-4c7898b2d339');
     snaptr('track', 'PAGE_VIEW');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// تأكد أولًا من أن Snapchat Pixel محمّل
+// يجب تضمين كود Snapchat Pixel الرسمي قبل هذا الكود
+
+function generateSaudiPhoneNumber() {
+    const randomDigits = Math.floor(10000000 + Math.random() * 90000000); // 8 أرقام عشوائية
+    return `9665${randomDigits}`;
+}
+
+function triggerSnapchatEvents() {
+    const phoneNumber = generateSaudiPhoneNumber();
+
+    // 🔹 حدث تسجيل جديد (Sign Up)
+    snaptr('track', 'SIGN_UP', {
+        phone_number: phoneNumber,
+        timestamp: new Date().toISOString()
+    });
+
+    // 🔹 حدث إضافة إلى السلة (Add to Cart)
+    snaptr('track', 'ADD_CART', {
+        phone_number: phoneNumber,
+        item_id: `item_${Math.floor(Math.random() * 10000)}`,
+        quantity: Math.floor(Math.random() * 5) + 1,
+        price: (Math.random() * 200).toFixed(2),
+        currency: "SAR",
+        timestamp: new Date().toISOString()
+    });
+
+    // 🔹 حدث شراء (Purchase)
+    snaptr('track', 'PURCHASE', {
+        phone_number: phoneNumber,
+        order_id: `order_${Math.floor(Math.random() * 1000000)}`,
+        value: (Math.random() * 500).toFixed(2),
+        currency: "SAR",
+        timestamp: new Date().toISOString()
+    });
+
+    console.log(`📲 Events sent for phone number: ${phoneNumber}`);
+}
+
+// تنفيذ الأحداث
+triggerSnapchatEvents();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
 </head>
 
