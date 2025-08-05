@@ -196,7 +196,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         <img src="logo.webp" alt="Laviviane Logo">
     </div>
     <h1 class="profile-title">لافيڤيان Maison de Pâtisserie</h1>
-    <p class="profile-description">لافيڤيان، كيك وشوكولاتة، نصنع لحظاتك الحلوة منذ ٢٠١٧</p>
+    <p class="profile-description">لافيڤيان، كيك وشوكولاتة، نصنع لحظاتك الحلوة منذ 2010</p>
 
     <a href="https://laviviane.com/" class="link-button" target="_blank" rel="noopener"><img src="images/appicon.jpeg" alt="App Icon">اطلب عبر متجرنا الالكتروني</a>
     <a href="https://iwtsp.com/966566622888" class="link-button" target="_blank" rel="noopener"><img src="images/wapp.jpeg" alt="WhatsApp Icon">اطلب عبر الواتساب</a>
