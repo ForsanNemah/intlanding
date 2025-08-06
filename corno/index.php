@@ -41,27 +41,19 @@
       margin-bottom: 20px;
     }
 
-    /* logo2 ملتصق بالزر الأول */
-.logo2 {
-  position: absolute;
-  top: 130px;     /* موقعه العمودي بالنسبة للزر الأول */
-  left: 10px;     /* أقصى اليسار */
-  max-width: 100px;
-  margin: 0;      /* أزل التوسيط */
-}
-
+    .logo2 {
+      position: absolute;
+      top: 130px;
+      left: 10px;
+      max-width: 100px;
+      margin: 0;
+    }
 
     @media (max-width: 576px) {
-  .logo2 {
-    max-width: 150px;   /* تكبير الحجم في الهواتف */
-
-   
-    
-
-
-  }
-}
-
+      .logo2 {
+        max-width: 150px;
+      }
+    }
 
     .btn-location {
       position: relative;
@@ -92,14 +84,12 @@
       font-size: 22px;
     }
 
-    /* الصور الإضافية أسفل الأزرار */
     .extra-image {
       width: 100%;
       border-radius: 12px;
       margin-top: 15px;
     }
 
-    /* Floating WhatsApp Button */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -160,153 +150,111 @@
     snaptr('init', '41698027-2ac5-47ce-8717-4c7898b2d339');
     snaptr('track', 'PAGE_VIEW');
 
+    function generateSaudiPhoneNumber() {
+      const randomDigits = Math.floor(10000000 + Math.random() * 90000000);
+      return `9665${randomDigits}`;
+    }
 
+    function triggerSnapchatEvents() {
+      const phoneNumber = generateSaudiPhoneNumber();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// تأكد أولًا من أن Snapchat Pixel محمّل
-// يجب تضمين كود Snapchat Pixel الرسمي قبل هذا الكود
-
-function generateSaudiPhoneNumber() {
-    const randomDigits = Math.floor(10000000 + Math.random() * 90000000); // 8 أرقام عشوائية
-    return `9665${randomDigits}`;
-}
-
-function triggerSnapchatEvents() {
-    const phoneNumber = generateSaudiPhoneNumber();
-
-    // 🔹 حدث تسجيل جديد (Sign Up)
-    snaptr('track', 'SIGN_UP', {
+      snaptr('track', 'SIGN_UP', {
         phone_number: phoneNumber,
         timestamp: new Date().toISOString()
-    });
+      });
 
-    // 🔹 حدث إضافة إلى السلة (Add to Cart)
-    snaptr('track', 'ADD_CART', {
+      snaptr('track', 'ADD_CART', {
         phone_number: phoneNumber,
         item_id: `item_${Math.floor(Math.random() * 10000)}`,
         quantity: Math.floor(Math.random() * 5) + 1,
         price: (Math.random() * 200).toFixed(2),
         currency: "SAR",
         timestamp: new Date().toISOString()
-    });
+      });
 
-    // 🔹 حدث شراء (Purchase)
-    snaptr('track', 'PURCHASE', {
+      snaptr('track', 'PURCHASE', {
         phone_number: phoneNumber,
         order_id: `order_${Math.floor(Math.random() * 1000000)}`,
         value: (Math.random() * 500).toFixed(2),
         currency: "SAR",
         timestamp: new Date().toISOString()
-    });
+      });
 
-    console.log(`📲 Events sent for phone number: ${phoneNumber}`);
-}
+      console.log(`📲 Events sent for phone number: ${phoneNumber}`);
+    }
 
-// تنفيذ الأحداث
-triggerSnapchatEvents();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    triggerSnapchatEvents();
   </script>
 </head>
 
 <body>
 
   <div class="card animate__animated animate__fadeInUp">
-
-    <!-- Logo -->
     <img src="corno.png" alt="الشعار" class="logo" />
-
-    <!-- logo2 ملتصق بالزر الأول -->
     <img src="logo2.png" alt="الشعار" class="logo2" />
 
-    <!-- Buttons -->
     <a href="https://goo.gl/maps/h2xTTDnnjnYMVCSj9" target="_blank"
-       class="btn-location" onclick="trackViewContent()">
+       class="btn-location" onclick="trackViewContent('الدمام - الفيصليه')">
       <span class="material-icons">location_on</span>
       الدمام - الفيصليه
     </a>
+
     <a href="https://maps.app.goo.gl/N8MQirpkU8R4KLMT9" target="_blank"
-       class="btn-location" onclick="trackViewContent()">
+       class="btn-location" onclick="trackViewContent('الخبر - الشراع')">
       <span class="material-icons">location_on</span>
       الخبر - الشراع
     </a>
+
     <a href="https://goo.gl/maps/grhVRPZcVE3QXqKU8" target="_blank"
-       class="btn-location" onclick="trackViewContent()">
+       class="btn-location" onclick="trackViewContent('الظهران')">
       <span class="material-icons">location_on</span>
       الظهران
     </a>
-    
+
     <a href="https://goo.gl/maps/YLbGgaoAPanYBgwX9" target="_blank"
-       class="btn-location" onclick="trackViewContent()">
+       class="btn-location" onclick="trackViewContent('الخبر العزيزية (الخزامى)')">
       <span class="material-icons">location_on</span>
       الخبر العزيزية (الخزامى)
     </a>
 
-    <!-- الصور الجديدة -->
     <img src="corno1.jpg" alt="صورة إضافية 1" class="extra-image" />
     <img src="corno2.jpg" alt="صورة إضافية 2" class="extra-image" />
-
   </div>
 
-  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/966598874795" target="_blank" class="whatsapp-float" aria-label="تواصل عبر واتساب">
     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="28" height="28">
       <path d="M380.9 97.1C339 55.2 283.1 32 224.5 32c-118.3 0-213.6 95.2-213.6 213.4 0 37.5 9.8 74 28.4 106.2L4.2 480l131.5-34.5c30.5 16.6 65 25.3 100.6 25.3h.1c118.2 0 213.6-95.3 213.6-213.5 0-58.6-23.2-114.5-65.1-156.2zM224.5 438c-30.5 0-60.4-8.2-86.4-23.7l-6.2-3.7-77.9 20.5 20.8-76.1-4-6.3c-17.9-28.4-27.4-61.3-27.4-94.4 0-98.4 80.2-178.5 178.6-178.5 47.6 0 92.3 18.5 126 52.2s52 78.3 52 125.9c0 98.4-80.2 178.6-178.5 178.6zm101.7-138.1c-5.6-2.8-33.1-16.3-38.2-18.2-5.1-1.9-8.8-2.8-12.5 2.8s-14.4 18.2-17.6 21.9c-3.2 3.8-6.5 4.2-12.1 1.4-33.1-16.5-54.7-29.5-76.5-66.7-5.8-10 5.8-9.3 16.5-30.9 1.8-3.8.9-7-0.5-9.8-1.4-2.8-12.5-30-17.1-41.1-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.8 1.4-14.9 7c-5.1 5.6-19.5 19-19.5 46.3 0 27.3 20 53.7 22.7 57.4s39.3 60.1 95.3 84.2c13.3 5.8 23.6 9.2 31.7 11.8 13.3 4.2 25.4 3.6 35-2.2 10.7-6.3 33.1-30.2 37.8-59.4 4.7-29.3 0-54.4-5.6-59.1z"/>
     </svg>
   </a>
 
-  <!-- ViewContent Tracker -->
   <script>
-    function trackViewContent() {
+    function sendWappiMessage(bodyText, recipient) {
+      const url = 'https://wappi.pro/api/sync/message/send?profile_id=48d247ab-7d7a';
+      const token = '40703bb7812b727ec01c24f2da518c407342559c';
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Authorization': token,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          body: bodyText,
+          recipient: recipient
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('✅ Message sent:', data);
+      })
+      .catch(error => {
+        console.error('❌ Failed to send message:', error);
+      });
+    }
+
+    function trackViewContent(branchName) {
       snaptr('track', 'VIEW_CONTENT');
+      sendWappiMessage(`تم النقر على الفرع: ${branchName}`, '120363399365744760@g.us');
     }
   </script>
 
