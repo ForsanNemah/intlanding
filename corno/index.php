@@ -189,9 +189,11 @@
 
 <body>
 
+
   <div class="card animate__animated animate__fadeInUp">
     <img src="corno.png" alt="الشعار" class="logo" />
     <img src="logo2.png" alt="الشعار" class="logo2" />
+    <!-- 
 
     <a href="https://goo.gl/maps/h2xTTDnnjnYMVCSj9" target="_blank"
        class="btn-location" onclick="trackViewContent('الدمام - الفيصليه')">
@@ -216,10 +218,18 @@
       <span class="material-icons">location_on</span>
       الخبر العزيزية (الخزامى)
     </a>
+-->
+
+<?php include "branches.php" ?>
 
     <img src="corno1.jpg" alt="صورة إضافية 1" class="extra-image" />
     <img src="corno2.jpg" alt="صورة إضافية 2" class="extra-image" />
-  </div>
+  </div> 
+
+
+
+
+
 
   <a href="https://wa.me/966598874795" target="_blank" class="whatsapp-float" aria-label="تواصل عبر واتساب">
     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="28" height="28">
@@ -228,6 +238,14 @@
   </a>
 
   <script>
+
+
+
+
+
+
+
+
     function sendWappiMessage(bodyText, recipient) {
       const url = 'https://wappi.pro/api/sync/message/send?profile_id=48d247ab-7d7a';
       const token = '40703bb7812b727ec01c24f2da518c407342559c';
