@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIS - حلول البيوت الذكية</title>
+    
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-home me-2 text-danger"></i>
+                TIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-us">لماذا نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">ما يميزنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">طريقة عملنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solutions">حلولنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/hero-video.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title" data-aos="fade-up">
+                            مرحباً بكم في <span class="text-danger">TIS</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            رواد حلول البيوت الذكية في المملكة العربية السعودية
+                        </p>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                            نحول منزلك إلى بيت ذكي متطور بأحدث التقنيات العالمية
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#contact" class="btn btn-danger btn-lg me-3">تواصل معنا</a>
+                            <a href="#about" class="btn btn-outline-light btn-lg">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title">من نحن</h2>
+                    <p class="lead">
+                        شركة TIS هي شركة رائدة في مجال حلول البيوت الذكية، نتخصص في تقديم أحدث التقنيات والحلول المبتكرة لتحويل المنازل التقليدية إلى بيوت ذكية متطورة.
+                    </p>
+                    <p>
+                        نحن نؤمن بأن التكنولوجيا يجب أن تجعل حياتك أسهل وأكثر راحة وأماناً. لذلك نقدم حلولاً متكاملة تشمل أنظمة الأمان الذكية، والإضاءة التلقائية، والتحكم في المناخ، وأنظمة الترفيه المنزلي.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="stat-item text-center">
+                                <h3 class="text-danger">500+</h3>
+                                <p>مشروع منجز</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-item text-center">
+                                <h3 class="text-danger">10+</h3>
+                                <p>سنوات خبرة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="images/about-us.jpg" alt="من نحن" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">لماذا تختار TIS؟</h2>
+                <p class="lead">نحن نقدم أفضل الحلول الذكية مع ضمان الجودة والموثوقية</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-award text-danger"></i>
+                        </div>
+                        <h4>خبرة واسعة</h4>
+                        <p>أكثر من 10 سنوات من الخبرة في مجال البيوت الذكية والتقنيات المتطورة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools text-danger"></i>
+                        </div>
+                        <h4>تقنيات متطورة</h4>
+                        <p>نستخدم أحدث التقنيات العالمية من أفضل الشركات المصنعة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset text-danger"></i>
+                        </div>
+                        <h4>دعم فني متميز</h4>
+                        <p>فريق دعم فني متخصص متاح على مدار الساعة لخدمتكم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">ما الذي يميزنا</h2>
+                <p class="lead">مميزات فريدة تجعلنا الخيار الأول لحلول البيوت الذكية</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="feature-item d-flex">
+                        <div class="feature-icon-small">
+                            <i class="fas fa-shield-alt text-danger"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>أمان عالي المستوى</h5>
+                            <p>أنظمة أمان متطورة مع تشفير عالي الجودة لحماية بياناتك وخصوصيتك</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="feature-item d-flex">
+                        <div class="feature-icon-small">
+                            <i class="fas fa-mobile-alt text-danger"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>تحكم عن بُعد</h5>
+                            <p>تحكم كامل في منزلك من أي مكان في العالم عبر تطبيق الهاتف الذكي</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="feature-item d-flex">
+                        <div class="feature-icon-small">
+                            <i class="fas fa-leaf text-danger"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>توفير الطاقة</h5>
+                            <p>حلول ذكية لتوفير الطاقة وتقليل فواتير الكهرباء بنسبة تصل إلى 40%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="feature-item d-flex">
+                        <div class="feature-icon-small">
+                            <i class="fas fa-cog text-danger"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>سهولة الاستخدام</h5>
+                            <p>واجهات بسيطة وسهلة الاستخدام تناسب جميع أفراد العائلة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">خدماتنا</h2>
+                <p class="lead">مجموعة شاملة من الخدمات لتحويل منزلك إلى بيت ذكي</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-video text-danger"></i>
+                        </div>
+                        <h4>أنظمة المراقبة</h4>
+                        <p>كاميرات مراقبة ذكية عالية الدقة مع إمكانية المشاهدة المباشرة والتسجيل</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb text-danger"></i>
+                        </div>
+                        <h4>الإضاءة الذكية</h4>
+                        <p>أنظمة إضاءة ذكية قابلة للتحكم والبرمجة مع توفير الطاقة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-thermometer-half text-danger"></i>
+                        </div>
+                        <h4>التحكم في المناخ</h4>
+                        <p>أنظمة تكييف وتدفئة ذكية للحصول على الراحة المثلى</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lock text-danger"></i>
+                        </div>
+                        <h4>الأقفال الذكية</h4>
+                        <p>أقفال إلكترونية متطورة مع إمكانية الفتح بالبصمة أو الرقم السري</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-music text-danger"></i>
+                        </div>
+                        <h4>أنظمة الصوت</h4>
+                        <p>أنظمة صوتية متطورة للترفيه المنزلي مع جودة صوت عالية</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wifi text-danger"></i>
+                        </div>
+                        <h4>الشبكات الذكية</h4>
+                        <p>شبكات إنترنت قوية ومستقرة لضمان عمل جميع الأجهزة الذكية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">طريقة عملنا</h2>
+                <p class="lead">خطوات بسيطة ومنظمة لتحويل منزلك إلى بيت ذكي</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step text-center">
+                        <div class="step-number">1</div>
+                        <h4>الاستشارة</h4>
+                        <p>نقوم بزيارة منزلك لفهم احتياجاتك وتقديم الاستشارة المناسبة</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step text-center">
+                        <div class="step-number">2</div>
+                        <h4>التصميم</h4>
+                        <p>نصمم نظاماً ذكياً مخصصاً يناسب منزلك وميزانيتك</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-step text-center">
+                        <div class="step-number">3</div>
+                        <h4>التركيب</h4>
+                        <p>فريق متخصص يقوم بتركيب وتشغيل جميع الأنظمة بدقة عالية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-step text-center">
+                        <div class="step-number">4</div>
+                        <h4>التدريب والدعم</h4>
+                        <p>نقدم التدريب اللازم ودعم فني مستمر لضمان رضاكم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">الحلول التي نقدمها</h2>
+                <p class="lead">حلول متكاملة لجميع احتياجات البيت الذكي</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="solution-card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/smart-home.jpg" alt="البيت الذكي الكامل" class="img-fluid h-100 object-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5>البيت الذكي الكامل</h5>
+                                    <p>حل متكامل يشمل جميع أنظمة البيت الذكي من الأمان إلى الترفيه</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-danger me-2"></i>أنظمة الأمان والمراقبة</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>التحكم في الإضاءة والمناخ</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>أنظمة الترفيه المنزلي</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="solution-card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/security-system.jpg" alt="أنظمة الأمان" class="img-fluid h-100 object-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5>أنظمة الأمان المتطورة</h5>
+                                    <p>حماية شاملة لمنزلك مع أحدث تقنيات الأمان والمراقبة</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-danger me-2"></i>كاميرات مراقبة عالية الدقة</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>أجهزة إنذار ذكية</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>أقفال إلكترونية متطورة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="lead">نحن هنا لمساعدتك في تحويل منزلك إلى بيت ذكي</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">رقم الجوال</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">رسالتك (اختياري)</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger btn-lg">إرسال الرسالة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-home me-2 text-danger"></i>TIS</h5>
+                    <p>رواد حلول البيوت الذكية في المملكة العربية السعودية</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 TIS. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

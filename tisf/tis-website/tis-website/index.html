@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIS - حلول البيوت الذكية</title>
+    
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger fs-2" href="#home">
+                <i class="fas fa-home-alt me-2"></i>TIS
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-us">لماذا نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">مشاريعنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative overflow-hidden">
+        <div class="hero-video-container">
+            <video autoplay muted loop class="hero-video" poster="assets/images/hero-bg.jpg">
+                <source src="assets/videos/hero-video.mp4" type="video/mp4">
+                <!-- Fallback background image -->
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 col-md-10 mx-auto text-center text-white">
+                    <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">
+                        حلول البيوت الذكية المتطورة
+                    </h1>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">
+                        نقدم أحدث التقنيات في مجال البيوت الذكية مع فريق متخصص من الخبراء لتحويل منزلك إلى مساحة ذكية ومريحة
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="#contact" class="btn btn-danger btn-lg px-5 py-3 me-3">
+                            <i class="fas fa-phone me-2"></i>تواصل معنا
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg px-5 py-3">
+                            <i class="fas fa-arrow-down me-2"></i>اكتشف خدماتنا
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">من نحن</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="200">
+                        شركة TIS تقدم حلول البيوت الذكية باستخدام أحدث التقنيات
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="h4 fw-bold mb-3">رؤيتنا</h3>
+                        <p class="text-muted">
+                            نسعى لتكون الشركة الرائدة في مجال حلول البيوت الذكية في المملكة العربية السعودية، 
+                            من خلال تقديم أحدث التقنيات والحلول المبتكرة التي تلبي احتياجات عملائنا وتفوق توقعاتهم.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3 class="h4 fw-bold mb-3">مهمتنا</h3>
+                        <p class="text-muted">
+                            تحويل المنازل والمباني التجارية إلى مساحات ذكية ومريحة وآمنة، 
+                            باستخدام أحدث التقنيات والأنظمة المتطورة مع ضمان أعلى معايير الجودة والخدمة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="h3 fw-bold text-danger" data-aos="fade-up">فريق العمل</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-user-tie fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Mr. Loay Dakdak</h5>
+                        <p class="text-muted small">المدير التنفيذي</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-user-cog fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Mr. Talal Alattar</h5>
+                        <p class="text-muted small">المدير العام</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-users fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Ms. Reem Yousif Kalantan</h5>
+                        <p class="text-muted small">مسؤولة العلاقات العامة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-project-diagram fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Mr. Jalal Abdulraouf</h5>
+                        <p class="text-muted small">مدير المشاريع</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-handshake fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Eng. Raid Al-Aswad</h5>
+                        <p class="text-muted small">مستشار المبيعات</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-tools fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Eng. Mahmood Zakaryah</h5>
+                        <p class="text-muted small">مسؤول الدعم الفني</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-bullhorn fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Eng. Forsan Alnemaah</h5>
+                        <p class="text-muted small">مدير التسويق</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-laptop fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Eng. Areej Imkedeh</h5>
+                        <p class="text-muted small">مدير التسويق الإلكتروني</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-share-alt fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Eng. Jihad Al-boghash</h5>
+                        <p class="text-muted small">مدير السوشيال ميديا</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="team-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        <div class="team-icon mb-3">
+                            <i class="fas fa-store fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">فريق التميز</h5>
+                        <p class="text-muted small">مدير المعرض و 10 أشخاص</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">لماذا نحن؟</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="200">
+                        نتميز بالخبرة والجودة والالتزام في تقديم أفضل الحلول
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-medal fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">خبرة واسعة</h4>
+                        <p class="text-muted">
+                            سنوات من الخبرة في مجال البيوت الذكية وتقديم الحلول المتطورة
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-gem fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">جودة عالية</h4>
+                        <p class="text-muted">
+                            نستخدم أفضل المنتجات والتقنيات لضمان أعلى معايير الجودة
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">التزام بالمواعيد</h4>
+                        <p class="text-muted">
+                            نلتزم بالمواعيد المحددة ونسلم المشاريع في الوقت المناسب
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-rocket fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">أحدث التقنيات</h4>
+                        <p class="text-muted">
+                            نواكب أحدث التطورات التقنية في مجال البيوت الذكية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Us Different Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">ما الذي يميزنا؟</h2>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="difference-content">
+                        <div class="difference-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="difference-icon me-3">
+                                    <i class="fas fa-puzzle-piece fa-2x text-danger"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5 fw-bold mb-2">حلول متكاملة</h4>
+                                    <p class="text-muted">نقدم حلولاً شاملة تناسب جميع احتياجات العملاء</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="difference-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="difference-icon me-3">
+                                    <i class="fas fa-drafting-compass fa-2x text-danger"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5 fw-bold mb-2">تصميم مخصص</h4>
+                                    <p class="text-muted">كل مشروع يحصل على تصميم وتنفيذ مخصص حسب المتطلبات</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="difference-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="difference-icon me-3">
+                                    <i class="fas fa-headset fa-2x text-danger"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5 fw-bold mb-2">خدمة ما بعد البيع</h4>
+                                    <p class="text-muted">دعم فني متواصل وخدمة صيانة شاملة</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="difference-item">
+                            <div class="d-flex align-items-start">
+                                <div class="difference-icon me-3">
+                                    <i class="fas fa-heart fa-2x text-danger"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5 fw-bold mb-2">رضا العملاء</h4>
+                                    <p class="text-muted">هدفنا الأول هو تحقيق رضا العملاء الكامل</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="difference-image text-center">
+                        <i class="fas fa-home fa-10x text-danger opacity-25"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">خدماتنا</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="200">
+                        نقدم مجموعة شاملة من حلول البيوت الذكية
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-key fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">الأقفال الذكية</h4>
+                        <p class="text-muted">أنظمة أقفال متطورة للأمان والراحة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-building fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">أنظمة المباني الذكية</h4>
+                        <p class="text-muted">حلول شاملة لإدارة المباني بذكاء</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-lightbulb fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">حلول الإضاءة الذكية</h4>
+                        <p class="text-muted">أنظمة إضاءة قابلة للتحكم والبرمجة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-phone-alt fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">الانتركم الذكي</h4>
+                        <p class="text-muted">أنظمة اتصال داخلي متطورة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-broom fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">المكانس المركزية</h4>
+                        <p class="text-muted">أنظمة تنظيف مركزية فعالة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-window-maximize fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">الزجاج والطبقات الذكية</h4>
+                        <p class="text-muted">تقنيات زجاج متطورة للخصوصية والراحة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-swimming-pool fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">أنظمة المسابح الذكية</h4>
+                        <p class="text-muted">تحكم ذكي في أنظمة المسابح</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-volume-up fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">أنظمة الصوت والمؤتمرات</h4>
+                        <p class="text-muted">حلول صوتية احترافية للمنازل والمكاتب</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">أنظمة الحماية والأمان</h4>
+                        <p class="text-muted">حلول أمنية شاملة ومتطورة</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="service-card bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-tv fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">شاشات العرض الذكية</h4>
+                        <p class="text-muted">شاشات تفاعلية وأنظمة عرض متطورة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">طريقة عملنا</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="200">
+                        نتبع خطوات واضحة لضمان جودة الخدمة
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="process-timeline">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="process-step text-center">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">1</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">الاستشارة والتقييم</h4>
+                                    <p class="text-muted">دراسة المتطلبات وتقييم الموقع</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="process-step text-center">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">2</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">العرض الفني والمالي</h4>
+                                    <p class="text-muted">تقديم عرض شامل ومفصل</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="process-step text-center">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">3</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">تصميم الأنظمة</h4>
+                                    <p class="text-muted">وضع التصاميم والمخططات التفصيلية</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="process-step text-center">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">4</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">التوريد والتنفيذ</h4>
+                                    <p class="text-muted">توريد المعدات وتنفيذ المشروع</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="process-step text-center">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">5</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">البرمجة الكاملة</h4>
+                                    <p class="text-muted">برمجة وتكوين جميع الأنظمة</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="process-step text-center">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">6</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">التسليم والتدريب</h4>
+                                    <p class="text-muted">تسليم المشروع وتدريب المستخدمين</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="700">
+                                <div class="process-step">
+                                    <div class="process-number">
+                                        <span class="badge bg-danger rounded-circle p-3 fs-4">7</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mt-3 mb-2">الدعم الفني والصيانة</h4>
+                                    <p class="text-muted">خدمة ما بعد البيع والدعم المستمر</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">مشاريعنا</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="200">
+                        نفتخر بتنفيذ مشاريع متميزة في مختلف القطاعات
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Project Categories -->
+            <div class="row">
+                <div class="col-lg-6 mb-5" data-aos="fade-right">
+                    <div class="project-category bg-white rounded shadow-sm p-4">
+                        <h3 class="h4 fw-bold text-danger mb-3">
+                            <i class="fas fa-home me-2"></i>مشاريع المنازل
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                فلل ضاحية سمو – مكة
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                فيلا خاصة – أبها
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-5" data-aos="fade-left">
+                    <div class="project-category bg-white rounded shadow-sm p-4">
+                        <h3 class="h4 fw-bold text-danger mb-3">
+                            <i class="fas fa-building me-2"></i>المشاريع التجارية
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                مول العرب (سينومي)
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                فندق شيراتون – جدة
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-5" data-aos="fade-right">
+                    <div class="project-category bg-white rounded shadow-sm p-4">
+                        <h3 class="h4 fw-bold text-danger mb-3">
+                            <i class="fas fa-landmark me-2"></i>المشاريع الحكومية
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                وزارة المالية
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-5" data-aos="fade-left">
+                    <div class="project-category bg-white rounded shadow-sm p-4">
+                        <h3 class="h4 fw-bold text-danger mb-3">
+                            <i class="fas fa-mosque me-2"></i>المشاريع الخدمية والمجتمعية
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                مسجد عطار – حي الشاطئ
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our Clients -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="h3 fw-bold text-danger" data-aos="fade-up">عملاؤنا</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="client-card text-center p-3 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-landmark fa-2x text-danger mb-2"></i>
+                        <p class="small fw-bold mb-0">وزارة المالية</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="client-card text-center p-3 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-shopping-bag fa-2x text-danger mb-2"></i>
+                        <p class="small fw-bold mb-0">مول العرب</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="client-card text-center p-3 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-hotel fa-2x text-danger mb-2"></i>
+                        <p class="small fw-bold mb-0">فندق شيراتون</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="client-card text-center p-3 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-mosque fa-2x text-danger mb-2"></i>
+                        <p class="small fw-bold mb-0">مسجد عطار</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="client-card text-center p-3 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-home fa-2x text-danger mb-2"></i>
+                        <p class="small fw-bold mb-0">فلل ضاحية سمو</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="client-card text-center p-3 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-home fa-2x text-danger mb-2"></i>
+                        <p class="small fw-bold mb-0">فيلا خاصة أبها</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-danger mb-3" data-aos="fade-up">تواصل معنا</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="200">
+                        نحن هنا لمساعدتك في تحقيق حلم البيت الذكي
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form bg-white rounded shadow-sm p-5" data-aos="fade-up">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label fw-bold">الاسم</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label fw-bold">رقم الجوال</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold">نص الرسالة</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-4">
+                    <h3 class="h3 fw-bold text-danger" data-aos="fade-up">تابعنا على وسائل التواصل الاجتماعي</h3>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="social-links text-center" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://www.instagram.com/tiscontrol_sa?igsh=ODNuZm0wamNkOGZu" target="_blank" class="social-link me-3">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1HE74LRaMV/" target="_blank" class="social-link me-3">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@tiscontrol_sa?_t=zs-8xpq7lbwbeb&_r=1" target="_blank" class="social-link me-3">
+                            <i class="fab fa-tiktok fa-2x"></i>
+                        </a>
+                        <a href="https://youtube.com/@tiscontrol_sa?si=bQN1-7rw1NUPfZ55" target="_blank" class="social-link me-3">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                        <a href="https://x.com/tiscontrol_sa?t=8iZaQLHRXlCNCuZUlVxw8A&s=08" target="_blank" class="social-link me-3">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/108007352/admin/dashboard/" target="_blank" class="social-link me-3">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/tiscontrol_sa" target="_blank" class="social-link">
+                            <i class="fab fa-snapchat fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-0">&copy; 2024 TIS - حلول البيوت الذكية. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
