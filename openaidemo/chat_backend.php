@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 // API configuration (as requested)
-const API_KEY = "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";
+const API_KEY = "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";
 const ASSISTANT_ID = "asst_EM6NHfEACLBo6A6ziPPTEcdP";
 const BASE_URL = "https://api.openai.com/v1";
 
