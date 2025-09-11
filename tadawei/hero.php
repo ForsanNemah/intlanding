@@ -13,7 +13,13 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="hero-content">
-                    <h1 class="hero-title display-4 fw-bold mb-3">  عروض اليوم الوطني 95 من مجمع العافية الطبي</h1>
+                    <h1 class="hero-title display-4 fw-bold mb-3"> 
+                        
+                   
+                <?php echo $ad_main_title; ?>
+                
+                </h1>
+
                     <p class="hero-subtitle lead mb-4">
                         استمتع بأفضل العروض الطبية والتجميلية بمناسبة اليوم الوطني السعودي 🇸🇦<br>
                         خدمات طبية متميزة بأسعار ما تتفوت  !
