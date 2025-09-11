@@ -9,7 +9,7 @@
      style="background: url('./baner/baner.png') center center/cover no-repeat;">
 </div>
     
-    <div class="container text-center " style="padding-top:600px";>
+    <div class="container text-center " style="padding-top:0px";>
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="hero-content">
@@ -36,13 +36,5 @@
 </section>
 
 
-<style>
-.py-5 {
-    padding-top: 15rem !important;
-    padding-bottom: 3rem !important;
-}
-
-
-</style>
-
+ 
 
