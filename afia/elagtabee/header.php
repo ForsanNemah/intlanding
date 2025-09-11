@@ -1,7 +1,26 @@
 
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مجمع العافية الطبي - عروض اليوم الوطني 95</title>
+
+
+
+    <title>
+
+
+ 
+
+
+ 
+ 
+
+    <?php 
+    
+    include "info.php";
+    echo $page_titel; 
+    
+    
+    ?>
+    </title>
     
     <!-- Bootstrap 5.3 RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
@@ -26,8 +45,8 @@ var w_app_group_id="120363421935502947@g.us";
 var w_app_number="966556883648";
  var  call_number="966556883648";
  var ad_source="tiktok";
- var ad_name="derma tiktok ";
-var sheet_url="https://script.google.com/macros/s/AKfycbzEjefKIWSWBDvAI-JG63rnmTPkz0X044BQaZFsqwV6HuLZSw9uh0YiQEivul9nUg92/exec";
+ var ad_name="علاج طبيعي  tiktok ";
+var sheet_url="https://script.google.com/macros/s/AKfycbzDLXyI8o_jzbZ_mEcxrAiXTgD7izFmaM57moEP_-vPrClh8x-xnRTijw8ADCcTD89NRw/exec";
 
 
 
@@ -52,7 +71,8 @@ snaptr('init', '44ba299e-fb73-42fb-9f3f-bc272806a7ba');
 snaptr('init', 'b2436d09-c13e-4280-9181-caa1960c5448');
 snaptr('init', 'fc185b6c-2c56-4aa5-8bb6-ed5f470969fc');
 */
-snaptr('init', ' b00f5a25-e6f1-462e-954c-e0ad9a423e01');
+//snaptr('init', ' b00f5a25-e6f1-462e-954c-e0ad9a423e01');
+snaptr('init', 'e7d6dee1-7045-4ade-8aa7-e7395b83204b');
 snaptr('track', 'PAGE_VIEW');
 //snaptr('track', 'PURCHASE');
 //snaptr('track', 'SIGNUP');

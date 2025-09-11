@@ -22,12 +22,12 @@
 
 <script>
 
-var w_app_group_id="120363421935502947@g.us";
+var w_app_group_id="120363403203940102@g.us";
 var w_app_number="966556883648";
  var  call_number="966556883648";
  var ad_source="tiktok";
- var ad_name="derma tiktok ";
-var sheet_url="https://script.google.com/macros/s/AKfycbzEjefKIWSWBDvAI-JG63rnmTPkz0X044BQaZFsqwV6HuLZSw9uh0YiQEivul9nUg92/exec";
+ var ad_name="تغذية علاجية tiktok ";
+var sheet_url="https://script.google.com/macros/s/AKfycbzJc5HX3r6U5_WOiTo7tX2jOzFzWXxYG3RVKw_CgCCqaffxebfkVJCpYIycB4IUMqvO/exec";
 
 
 
@@ -52,7 +52,7 @@ snaptr('init', '44ba299e-fb73-42fb-9f3f-bc272806a7ba');
 snaptr('init', 'b2436d09-c13e-4280-9181-caa1960c5448');
 snaptr('init', 'fc185b6c-2c56-4aa5-8bb6-ed5f470969fc');
 */
-snaptr('init', ' b00f5a25-e6f1-462e-954c-e0ad9a423e01');
+snaptr('init', 'e7d6dee1-7045-4ade-8aa7-e7395b83204b');
 snaptr('track', 'PAGE_VIEW');
 //snaptr('track', 'PURCHASE');
 //snaptr('track', 'SIGNUP');
