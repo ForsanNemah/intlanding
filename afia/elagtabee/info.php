@@ -55,7 +55,7 @@ $services = [
 
 
  
-$page_titel="مجمع العافية الطبي -تغذية علاجية";
+$page_titel="مجمع العافية الطبي -   علاج طبيعي ";
 $w_app_number="966556883648";
 $call_number="966556883648";
 $email="info@alafiaclinics.com";
