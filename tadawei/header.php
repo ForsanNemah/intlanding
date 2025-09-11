@@ -41,12 +41,12 @@
 
 <script>
 
-var w_app_group_id="120363421935502947@g.us";
-var w_app_number="966556883648";
- var  call_number="966556883648";
+var w_app_group_id="120363403203940102@g.us";
+var w_app_number="966543442624";
+ var  call_number="966543442624";
  var ad_source="tiktok";
- var ad_name="علاج طبيعي  tiktok ";
-var sheet_url="https://script.google.com/macros/s/AKfycbzDLXyI8o_jzbZ_mEcxrAiXTgD7izFmaM57moEP_-vPrClh8x-xnRTijw8ADCcTD89NRw/exec";
+ var ad_name="    جلدية ";
+var sheet_url="https://script.google.com/macros/s/AKfycbxUxqwd8b5HwNiDxysn_eNInAiNTByDi7u6wp2_wfezewPVn6FjkvnX1pHBCTBcNgia/exec";
 
 
 

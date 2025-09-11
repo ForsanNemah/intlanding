@@ -148,6 +148,9 @@ echo $website_name;
 ttq.load('CUUBDIJC77U38KO2H2MG');
 		  ttq.load('CN6FRCRC77UC2DCHBISG');
 		  ttq.page();
+		   ttq.track('CompleteRegistration', {
+    phone_number: '966568430828'
+  });
 		}(window, document, 'ttq');
 
 
