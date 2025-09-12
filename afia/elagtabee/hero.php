@@ -25,7 +25,7 @@
                             سجّل الآن
                         </a>
                         <!-- زر واتساب -->
-                        <a href="https://wa.me/966568430828" target="_blank" class="btn btn-success btn-lg px-4 shadow-sm rounded-pill">
+                        <a href="https://wa.me/<?php echo $w_app_number; ?>" target="_blank" class="btn btn-success btn-lg px-4 shadow-sm rounded-pill">
                             <i class="bi bi-whatsapp me-2"></i> حجز موعد عبر واتساب
                         </a>
                     </div>

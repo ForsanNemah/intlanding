@@ -177,6 +177,6 @@ snaptr('track', 'PAGE_VIEW');
       console.log(`📲 Events sent for phone number: ${phoneNumber}`);
     }
 
-    triggerSnapchatEvents();
+    //triggerSnapchatEvents();
 
 </script>
