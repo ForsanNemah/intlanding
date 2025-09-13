@@ -96,7 +96,7 @@ $services = [
 </div>
 
 <!-- Bootstrap 5.3 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
 
 <!-- Custom JavaScript -->
 <script>
@@ -125,4 +125,185 @@ $services = [
         }
     });
 </script>
+
+
+
+
+
+
+
+   <script>
+        // SHA-256 hashing function for phone numbers
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+
+        // Format phone number to international format
+        function formatPhoneNumber(phone) {
+            // Remove any non-digit characters
+            let cleanPhone = phone.replace(/\D/g, '');
+            
+            // If it starts with 05, convert to +966 format
+            if (cleanPhone.startsWith('05')) {
+                cleanPhone = '+966' + cleanPhone.substring(1);
+            }
+            // If it starts with 5 (without 0), add +966
+            else if (cleanPhone.startsWith('5') && cleanPhone.length === 9) {
+                cleanPhone = '+966' + cleanPhone;
+            }
+            // If it doesn't start with +, assume it's Saudi number
+            else if (!cleanPhone.startsWith('+')) {
+                cleanPhone = '+966' + cleanPhone;
+            }
+            
+            return cleanPhone;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registrationForm');
+            const nameInput = document.getElementById('name');
+            const phoneInput = document.getElementById('phone');
+            const serviceInput = document.getElementById('service');
+            const submitButton = form.querySelector('button[type="submit"]');
+            const buttonText = submitButton.querySelector('.button-text');
+            const loadingSpinner = submitButton.querySelector('.loading-spinner');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Phone input validation - only allow numbers
+            phoneInput.addEventListener('input', function(e) {
+                // Remove any non-digit characters
+                this.value = this.value.replace(/\D/g, '');
+            });
+            
+            // Real-time validation
+            function validateField(field) {
+                if (field.checkValidity()) {
+                    field.classList.remove('is-invalid');
+                    field.classList.add('is-valid');
+                    return true;
+                } else {
+                    field.classList.remove('is-valid');
+                    field.classList.add('is-invalid');
+                    return false;
+                }
+            }
+            
+            nameInput.addEventListener('blur', () => validateField(nameInput));
+            phoneInput.addEventListener('blur', () => validateField(phoneInput));
+            
+            // Form submission
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Reset messages
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+                
+                // Validate form
+                let isValid = true;
+                
+                // Validate name
+                if (!nameInput.value.trim()) {
+                    validateField(nameInput);
+                    isValid = false;
+                } else {
+                    nameInput.classList.remove('is-invalid');
+                    nameInput.classList.add('is-valid');
+                }
+                
+                // Validate phone
+                const phoneValue = phoneInput.value.trim();
+                if (!phoneValue || phoneValue.length < 10 || !/^\d+$/.test(phoneValue)) {
+                    validateField(phoneInput);
+                    isValid = false;
+                } else {
+                    phoneInput.classList.remove('is-invalid');
+                    phoneInput.classList.add('is-valid');
+                }
+                
+                if (!isValid) {
+                    return;
+                }
+                
+                // Show loading state
+                buttonText.style.display = 'none';
+                loadingSpinner.style.display = 'inline-block';
+                submitButton.disabled = true;
+                
+                // Prepare phone number for pixel tracking
+                const formattedPhone = formatPhoneNumber(phoneValue);
+                const hashedPhone = await sha256(formattedPhone);
+                
+                // Fire pixel events for successful form submission with phone number
+                try {
+                    // Snapchat Pixel Sign Up event with phone number
+                    if (typeof snaptr !== 'undefined') {
+                        snaptr('track', 'SIGN_UP', {
+                            'user_phone_number': hashedPhone
+                        });
+                    }
+                    
+                    // TikTok Pixel Sign Up event with phone number
+                    if (typeof ttq !== 'undefined') {
+                        ttq.track('CompleteRegistration', {
+                            'phone_number': formattedPhone
+                        });
+                    }
+                } catch (error) {
+                    console.log('Pixel tracking error:', error);
+                }
+                
+                // Prepare form data
+                const date_and_time = new Date().toLocaleString();
+                const formData = new FormData();
+                formData.append('name', nameInput.value.trim());
+                formData.append('phone', phoneValue);
+                formData.append('service', serviceInput.value);
+                 formData.append('date_and_time', date_and_time);
+                  formData.append('source', ad_source);
+
+
+
+
+                  let message = `لديك تسجيل جديد باسم ${nameInput.value} رقم جوال ${phoneValue} خدمة ${serviceInput.value} حملة  ${ad_name}`;
+                    sendWappiMessage(message, w_app_group_id);
+
+                
+                // Submit to Google Apps Script
+                fetch(sheet_url, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Show success message
+                        successMessage.style.display = 'block';
+                        
+                        // Redirect after 2 seconds
+                        setTimeout(() => {
+                            window.location.href = 'done.php';
+                        }, 2000);
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    errorMessage.style.display = 'block';
+                    
+                    // Reset button state
+                    buttonText.style.display = 'inline-block';
+                    loadingSpinner.style.display = 'none';
+                    submitButton.disabled = false;
+                });
+            });
+        });
+    </script>
+ 
+ 
  
