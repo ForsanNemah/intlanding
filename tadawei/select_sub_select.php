@@ -168,6 +168,8 @@ $services = [
             const nameInput = document.getElementById('name');
             const phoneInput = document.getElementById('phone');
             const serviceInput = document.getElementById('service');
+             const sub_service = document.getElementById('sub_service');
+            
             const submitButton = form.querySelector('button[type="submit"]');
             const buttonText = submitButton.querySelector('.button-text');
             const loadingSpinner = submitButton.querySelector('.loading-spinner');
@@ -264,6 +266,7 @@ $services = [
                 formData.append('name', nameInput.value.trim());
                 formData.append('phone', phoneValue);
                 formData.append('service', serviceInput.value);
+                  formData.append('sub_service', sub_service.value);
                  formData.append('date_and_time', date_and_time);
                   formData.append('source', ad_source);
 
