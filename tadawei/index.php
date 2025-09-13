@@ -17,7 +17,9 @@ include "floating.php";
  <?php
 
 include "hero.php";
-include "form.php";
+//include "form.php";
+include "select_sub_select.php";
+
 
 ?>
     <!-- About Us Section -->
