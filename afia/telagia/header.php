@@ -52,10 +52,10 @@ snaptr('init', '44ba299e-fb73-42fb-9f3f-bc272806a7ba');
 snaptr('init', 'b2436d09-c13e-4280-9181-caa1960c5448');
 snaptr('init', 'fc185b6c-2c56-4aa5-8bb6-ed5f470969fc');
 */
-snaptr('init', 'e7d6dee1-7045-4ade-8aa7-e7395b83204b');
+snaptr('init', ' 5adf7a48-cac2-4d91-b336-d2ad9236e111');
 snaptr('track', 'PAGE_VIEW');
 //snaptr('track', 'PURCHASE');
-//snaptr('track', 'SIGNUP');
+snaptr('track', 'SIGNUP');
 
 
 
