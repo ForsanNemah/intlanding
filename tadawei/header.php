@@ -84,7 +84,7 @@ snaptr('track', 'PAGE_VIEW');
       
       ttq.load('CQ0O4N3C77UA4KP67E10');
       
- ttq.track('CompleteRegistration', {});
+// ttq.track('CompleteRegistration', {});
       ttq.page();
       
     }(window, document, 'ttq');
