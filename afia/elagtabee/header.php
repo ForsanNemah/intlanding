@@ -84,7 +84,7 @@ snaptr('track', 'SIGNUP');
       
       ttq.load('CSSN8EJC77U84I7KRE40');
       ttq.page();
-         ttq.track('CompleteRegistration', {});
+        // ttq.track('CompleteRegistration', {});
     }(window, document, 'ttq');
 
 

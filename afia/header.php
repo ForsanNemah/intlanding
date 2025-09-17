@@ -55,7 +55,7 @@ snaptr('init', 'fc185b6c-2c56-4aa5-8bb6-ed5f470969fc');
 snaptr('init', ' 5adf7a48-cac2-4d91-b336-d2ad9236e111');
 snaptr('track', 'PAGE_VIEW');
 //snaptr('track', 'PURCHASE');
-snaptr('track', 'SIGNUP');
+//snaptr('track', 'SIGNUP');
 
 
 
@@ -64,7 +64,7 @@ snaptr('track', 'SIGNUP');
       
       ttq.load('CSSN8EJC77U84I7KRE40');
       ttq.page();
-         ttq.track('CompleteRegistration', {});
+         //ttq.track('CompleteRegistration', {});
     }(window, document, 'ttq');
 
 
