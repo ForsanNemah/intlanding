@@ -78,6 +78,15 @@ $services = [
                         </select>
                     </div>
 
+
+
+
+                    <div class="mb-4">
+                        <label for="name" class="form-label">ملاحظات اضافية  </label>
+                        <input type="text" class="form-control" id="note" name="note"  >
+                        <div class="invalid-feedback">ملاحضات اضافية    </div>
+                    </div>
+
                     <!-- Submit Button -->
                     <button type="submit" class="btn btn-register">
                         <span class="button-text">تسجيل</span>
@@ -170,6 +179,7 @@ $services = [
             const phoneInput = document.getElementById('phone');
             const serviceInput = document.getElementById('service');
              const sub_service = document.getElementById('sub_service');
+              const note = document.getElementById('note');
             
             const submitButton = form.querySelector('button[type="submit"]');
             const buttonText = submitButton.querySelector('.button-text');
@@ -270,6 +280,7 @@ $services = [
                   formData.append('sub_service', sub_service.value);
                  formData.append('date_and_time', date_and_time);
                   formData.append('source', ad_source);
+                   formData.append('note', note.value);
 
 
 
