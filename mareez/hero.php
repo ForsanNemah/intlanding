@@ -15,7 +15,9 @@
                 <div class="hero-content">
                     <h1 class="hero-title display-4 fw-bold mb-3"> 
                         
-                   
+ مجمع عيادات ماريز لطب وتقويم الأسنان 
+
+                      <br>
                 <?php echo $ad_main_title; ?>
                 
                 </h1>
