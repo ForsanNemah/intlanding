@@ -16,7 +16,10 @@
                     <h1 class="hero-title display-4 fw-bold mb-3"> 
                         
                    
-                <?php echo $ad_main_title; ?>
+              مجمع تداوي الجراحي الطبي
+              <br>
+              عروضنا بدأت الحين 
+
                 
                 </h1>
 
