@@ -41,12 +41,12 @@
 
 <script>
 
-var w_app_group_id="120363418947661300@g.us";
-var w_app_number="96654808217";
- var  call_number="96654808217";
+var w_app_group_id="120363419883163756@g.us";
+var w_app_number="966550520249";
+ var  call_number="966550520249";
  var ad_source="<?php echo $ad_source; ?>";
  var ad_name="    عامة ";
-var sheet_url="https://script.google.com/macros/s/AKfycbx2iLHNe08J8ZQ5hLZxZMKw6AwHbZV7my9JTE3G_vrQUjjcC9jmY2n7AOIBhW4RntN1yg/exec";
+var sheet_url="https://script.google.com/macros/s/AKfycbz8ReNyOgk180zAAD2OPwhZ5sFFIknnXquuQvyUbw8ZmcbQpVAv-lWQQcA1ShJPDQ/exec";
 
 
 
@@ -82,7 +82,7 @@ snaptr('track', 'PAGE_VIEW');
  !function (w, d, t) {
       w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
       
-      ttq.load('CQ0O4N3C77UA4KP67E10');
+      ttq.load('D3GE503C77UCTDLH183G');
       
 // ttq.track('CompleteRegistration', {});
       ttq.page();
