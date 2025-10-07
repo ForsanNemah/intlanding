@@ -13,7 +13,7 @@ include "info.php";
 
 
 if (isset($_GET['ad_source'])) {
-  $ad_source = isset($_GET['ad_source']) ? $_GET['ad_source'] : 1;
+    $ad_source = $_GET['ad_source'];
     //echo "Ad Source: " . htmlspecialchars($ad_source);
 } else {
     //echo "Ad Source not provided.";
@@ -55,7 +55,7 @@ include "about.php";
    
 
 //include "services.php";
-//include "services_images.php";
+include "services_images.php";
 
 ?>
 
