@@ -35,10 +35,11 @@ include "floating.php";
      
  <?php
 
-include "hero.php";
+
 //include "form.php";
 include "select_sub_select.php";
 
+include "hero.php";
 
 ?>
     <!-- About Us Section -->

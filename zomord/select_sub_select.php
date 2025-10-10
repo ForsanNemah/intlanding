@@ -42,7 +42,7 @@ $services = [
     <div class="row justify-content-center">
         <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="form-container">
-                <h1 class="form-title">سجل الان<br>ولاتفوتي عروضنا</h1>
+                <h1 class="form-title">سجل الان<br>ولاتفوت عروضنا</h1>
                 <form id="registrationForm" novalidate>
                     <!-- Name Field -->
                     <div class="mb-4">
