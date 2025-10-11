@@ -9,8 +9,8 @@
 $page_titel="  مجمع الزمرد العالي الطبي   ";
 $place_name="  مجمع الزمرد العالي الطبي   ";
 $adress=" السعودية-الرياض";
-$w_app_number="96654808217";
-$call_number="96654808217";
+$w_app_number="966548082176";
+$call_number="966548082176";
 $email="info@tadawis.com";
 $insta_url="https://www.instagram.com/zmorod_clinic/";
 
