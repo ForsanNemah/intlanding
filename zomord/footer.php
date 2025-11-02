@@ -1,5 +1,5 @@
 <!-- Footer Section -->
-<footer class="footer-section bg-dark text-white pt-4 pb-3">
+<footer id="footer_id" class="footer-section bg-dark text-white pt-4 pb-3">
     <div class="container">
         <div class="row align-items-center">
             <!-- Logo and About -->

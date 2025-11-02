@@ -1,11 +1,11 @@
-<section id="about_us" class="about-section mt-5 mb-5 " >
+<section id="why_us" class="about-section mt-5 mb-5 " >
     <div class="container">
         <div class="row align-items-center">
             <!-- النص -->
             <div class="col-lg-7 mb-4 mb-lg-0">
                 <h2 class="section-title mb-3"
                 
-                >عن    
+                >لماذا    
 
                 <?php echo $place_name; ?>
 
@@ -14,7 +14,7 @@
                 <div class="section-divider mb-4"></div>
                 <p class="about-text fs-5 lh-lg text-muted">
 
- <?php echo $about; ?>
+ <?php echo $why_us; ?>
                     
                 </p>
                 <div class="d-flex flex-wrap gap-3 mt-3">

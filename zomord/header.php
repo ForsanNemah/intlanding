@@ -182,3 +182,15 @@ snaptr('track', 'PAGE_VIEW');
     //triggerSnapchatEvents();
 
 </script>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11187732358"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11187732358');
+</script>

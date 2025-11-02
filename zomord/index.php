@@ -37,15 +37,19 @@ include "floating.php";
 
 
 //include "form.php";
+include "nav.php";
+include "hero.php";
 include "select_sub_select.php";
 
-include "hero.php";
+
 
 ?>
     <!-- About Us Section -->
    <?php
 
 include "about.php";
+include "why_us.php";
+
 
 ?>
 
@@ -85,7 +89,7 @@ include "footer.php";
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    
 </body>
 </html>
 

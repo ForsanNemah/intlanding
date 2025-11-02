@@ -743,6 +743,9 @@ html {
 
 
 
+section {
+  scroll-margin-top: 100px; /* ارتفاع النافبار أو أكثر شوي */
+}
 
 
 
