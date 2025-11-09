@@ -41,7 +41,7 @@
 
 <script>
 
-var w_app_group_id="120363421935502947@g.us";
+var w_app_group_id="120363422270951190@g.us";
 var w_app_number="966556883648";
  var  call_number="966556883648";
  var ad_source="tiktok";
