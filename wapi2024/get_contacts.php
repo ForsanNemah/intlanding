@@ -20,7 +20,7 @@ function printContactsInTable($profile_id) {
         CURLOPT_CUSTOMREQUEST => 'GET',
         CURLOPT_HTTPHEADER => array(
             'Content-Type: application/json',
-            'Authorization: 40703bb7812b727ec01c24f2da518c407342559c'
+            'Authorization: 9f9151b56d756354026b368ecc644edec19343b4'
         ),
 
         CURLOPT_SSL_VERIFYHOST => 0,
