@@ -3,18 +3,18 @@
 
 $website_name="
 
-مجمع برنس دنتل
+مجمع رند الثالث الطبي
  
 ";
 
-$department_name="   مجمع برنس دنتل    ";
+$department_name="    مجمع رند الثالث الطبي        ";
 
 $dr_name="
 
  
 ";
 
-$phone_main="966552557304";
+$phone_main="966594433728";
 $group_id="120363418666139003";
 $logo="footer_logo/pd.png";
 
