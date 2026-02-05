@@ -85,8 +85,9 @@ $services = [
                              <select class="form-control" id="branch" name="branch">
     <option value="">اختر الفرع </option>
     <option value="       ">  الطائف  </option>
-    <option value="   ">    التربة  </option>
+    <option value="   ">    تربه  </option>
 </select>
+
 
                     </div>
 
