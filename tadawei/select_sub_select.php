@@ -59,6 +59,37 @@ $services = [
                         <div class="invalid-feedback">يرجى إدخال رقم جوال صحيح (10 أرقام على الأقل)</div>
                     </div>
 
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Service Field -->
+                    <div class="mb-4">
+                        <label for="branch" class="form-label">الفرع</label>
+                        
+                             <select class="form-control" id="branch" name="branch">
+    <option value="">اختر الفرع </option>
+    <option value="       ">  الطائف  </option>
+    <option value="   ">    التربة  </option>
+</select>
+
+                    </div>
+
                     <!-- Service Field -->
                     <div class="mb-4">
                         <label for="service" class="form-label">الخدمة</label>
@@ -177,6 +208,7 @@ $services = [
             const form = document.getElementById('registrationForm');
             const nameInput = document.getElementById('name');
             const phoneInput = document.getElementById('phone');
+              const branch = document.getElementById('branch');
             const serviceInput = document.getElementById('service');
              const sub_service = document.getElementById('sub_service');
               const note = document.getElementById('note');
@@ -277,10 +309,12 @@ $services = [
                 formData.append('name', nameInput.value.trim());
                 formData.append('phone', phoneValue);
                 formData.append('service', serviceInput.value);
+                 formData.append('branch', branch.value);
                   formData.append('sub_service', sub_service.value);
                  formData.append('date_and_time', date_and_time);
                   formData.append('source', ad_source);
                    formData.append('note', note.value);
+                    
 
 
 

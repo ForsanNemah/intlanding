@@ -46,7 +46,7 @@ var w_app_number="966543442624";
  var  call_number="966543442624";
  var ad_source="tiktok";
  var ad_name="    جلدية ";
-var sheet_url="https://script.google.com/macros/s/AKfycbxUxqwd8b5HwNiDxysn_eNInAiNTByDi7u6wp2_wfezewPVn6FjkvnX1pHBCTBcNgia/exec";
+var sheet_url="https://script.google.com/macros/s/AKfycby3V-BySxDG4NXI79XCC2yg2ycLAFLGvXe6Ki1q7312swGuK8cELzc6lAkavZ6Zeh2f/exec";
 
 
 
