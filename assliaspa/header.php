@@ -22,7 +22,7 @@
 
 <script>
 
-var w_app_group_id="120363404101565925@g.us";
+var w_app_group_id="120363403225965877@g.us";
 var w_app_number="966566168425";
  var  call_number="966566168425";
  var ad_source=" ad1";
