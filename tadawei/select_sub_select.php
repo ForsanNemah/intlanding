@@ -309,8 +309,9 @@ $services = [
                 const formData = new FormData();
                 formData.append('name', nameInput.value.trim());
                 formData.append('phone', phoneValue);
+                   formData.append('branch', branch.value);
                 formData.append('service', serviceInput.value);
-                 formData.append('branch', branch.value);
+              
                   formData.append('sub_service', sub_service.value);
                  formData.append('date_and_time', date_and_time);
                   formData.append('source', ad_source);
