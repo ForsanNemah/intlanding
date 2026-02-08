@@ -321,7 +321,7 @@ $services = [
 
 
 
-                  let message = `لديك تسجيل جديد باسم ${nameInput.value} رقم جوال ${phoneValue} خدمة ${serviceInput.value} حملة  ${ad_name}`;
+                  let message = `لديك تسجيل جديد باسم ${nameInput.value} رقم جوال ${phoneValue} خدمة ${serviceInput.value} حملة  ${ad_name} فرع  ${branch.value}`;
                     sendWappiMessage(message, w_app_group_id);
 
                 
