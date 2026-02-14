@@ -150,6 +150,8 @@
     snaptr('init', '41698027-2ac5-47ce-8717-4c7898b2d339');
     snaptr('track', 'PAGE_VIEW');
 
+
+    
     function generateSaudiPhoneNumber() {
       const randomDigits = Math.floor(10000000 + Math.random() * 90000000);
       return `9665${randomDigits}`;
