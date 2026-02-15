@@ -42,9 +42,9 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item"><a class="nav-link active" href="index.php">الرئيسية</a></li>
             <li class="nav-item"><a class="nav-link" href="#about_us">من نحن</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://vender-oasis.easymenu.site/foodics-branch/restaurants/vender-oasis/9deabff6-d0d5-4e56-9421-d1a1c07eb0e6">المنيو</a></li>
+            <li class="nav-item"><a class="nav-link" href="#our_services_id">خدماتنا</a></li>
             <li hidden class="nav-item"><a class="nav-link" href="#offers">عروضنا</a></li>
-            <li hidden class="nav-item"><a class="nav-link" href="#why_us">لماذا نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="#why_us">لماذا نحن</a></li>
             <li class="nav-item"><a class="nav-link" href="#footer_id">تواصل معنا</a></li>
           </ul>
         </div>

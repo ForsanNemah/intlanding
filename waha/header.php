@@ -3,6 +3,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+ <?php 
+    
+    include "info.php";
+     
+    
+    
+    ?>
+
 
     <title>
 
@@ -15,7 +23,7 @@
 
     <?php 
     
-    include "info.php";
+ 
     echo $page_titel; 
     
     

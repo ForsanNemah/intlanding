@@ -36,7 +36,7 @@ include "floating.php";
  <?php
 
 
-include "nav.php";
+//include "nav.php";
 include "hero.php";
 //include "select_sub_select.php";
 
