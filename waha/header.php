@@ -50,8 +50,8 @@
 <script>
 
 var w_app_group_id="120363424938488516@g.us";
-var w_app_number="966548082176";
- var  call_number="966548082176";
+var w_app_number="966570776673";
+ var  call_number="966570776673";
  var ad_source="<?php echo $ad_source; ?>";
  var ad_name="    عامة ";
 var sheet_url="https://script.google.com/macros/s/AKfycbww9AtAuWNC0kvima7ctTmS8lMeKYun-SuhF6e2Yz5Z557lMqdiu_TR5D0CVNhjYU17/exec";
