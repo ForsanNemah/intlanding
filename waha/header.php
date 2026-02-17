@@ -49,7 +49,7 @@
 
 <script>
 
-var w_app_group_id="120363426174302858@g.us";
+var w_app_group_id="120363424938488516@g.us";
 var w_app_number="966548082176";
  var  call_number="966548082176";
  var ad_source="<?php echo $ad_source; ?>";
