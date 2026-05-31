@@ -1,0 +1,20 @@
+# # UploadedOrDerivedAudience
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**account_id** | **string** |  |
+**ad_account_id** | **string** | Platform ad account ID. Must start with act_ for Meta; bare platform id for others (Google customer id, X/TikTok/LinkedIn/Pinterest account id). |
+**name** | **string** |  |
+**description** | **string** |  | [optional]
+**type** | **string** |  |
+**pixel_id** | **string** | Required for website audiences | [optional]
+**retention_days** | **int** | Required for website audiences | [optional]
+**source_audience_id** | **string** | Required for lookalike audiences | [optional]
+**country** | **string** | 2-letter code, required for lookalike audiences | [optional]
+**ratio** | **float** | Required for lookalike audiences | [optional]
+**rule** | **object** | Pixel event rule for website audiences (optional) | [optional]
+**customer_file_source** | **string** | Data source declaration for GDPR compliance (customer_list only) | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "zernio-dev/zernio-php": "^0.0.297"
+    }
+}

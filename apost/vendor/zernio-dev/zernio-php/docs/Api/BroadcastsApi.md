@@ -1,0 +1,638 @@
+# Zernio\BroadcastsApi
+
+Platform-agnostic broadcast campaigns. Send bulk messages to contacts via any inbox platform. WhatsApp broadcasts use templates; other platforms use generic messages.
+
+All URIs are relative to https://zernio.com/api, except if the operation defines another base path.
+
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**addBroadcastRecipients()**](BroadcastsApi.md#addBroadcastRecipients) | **POST** /v1/broadcasts/{broadcastId}/recipients | Add recipients to a broadcast |
+| [**cancelBroadcast()**](BroadcastsApi.md#cancelBroadcast) | **POST** /v1/broadcasts/{broadcastId}/cancel | Cancel broadcast |
+| [**createBroadcast()**](BroadcastsApi.md#createBroadcast) | **POST** /v1/broadcasts | Create broadcast draft |
+| [**deleteBroadcast()**](BroadcastsApi.md#deleteBroadcast) | **DELETE** /v1/broadcasts/{broadcastId} | Delete broadcast |
+| [**getBroadcast()**](BroadcastsApi.md#getBroadcast) | **GET** /v1/broadcasts/{broadcastId} | Get broadcast details |
+| [**listBroadcastRecipients()**](BroadcastsApi.md#listBroadcastRecipients) | **GET** /v1/broadcasts/{broadcastId}/recipients | List broadcast recipients |
+| [**listBroadcasts()**](BroadcastsApi.md#listBroadcasts) | **GET** /v1/broadcasts | List broadcasts |
+| [**scheduleBroadcast()**](BroadcastsApi.md#scheduleBroadcast) | **POST** /v1/broadcasts/{broadcastId}/schedule | Schedule broadcast for later |
+| [**sendBroadcast()**](BroadcastsApi.md#sendBroadcast) | **POST** /v1/broadcasts/{broadcastId}/send | Send broadcast now |
+| [**updateBroadcast()**](BroadcastsApi.md#updateBroadcast) | **PATCH** /v1/broadcasts/{broadcastId} | Update broadcast |
+
+
+## `addBroadcastRecipients()`
+
+```php
+addBroadcastRecipients($broadcast_id, $add_broadcast_recipients_request): \Zernio\Model\AddBroadcastRecipients200Response
+```
+
+Add recipients to a broadcast
+
+Add recipients by contact IDs, raw phone numbers, or from the broadcast's segment filters.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+$add_broadcast_recipients_request = new \Zernio\Model\AddBroadcastRecipientsRequest(); // \Zernio\Model\AddBroadcastRecipientsRequest
+
+try {
+    $result = $apiInstance->addBroadcastRecipients($broadcast_id, $add_broadcast_recipients_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->addBroadcastRecipients: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+| **add_broadcast_recipients_request** | [**\Zernio\Model\AddBroadcastRecipientsRequest**](../Model/AddBroadcastRecipientsRequest.md)|  | |
+
+### Return type
+
+[**\Zernio\Model\AddBroadcastRecipients200Response**](../Model/AddBroadcastRecipients200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `cancelBroadcast()`
+
+```php
+cancelBroadcast($broadcast_id): \Zernio\Model\CancelBroadcast200Response
+```
+
+Cancel broadcast
+
+Cancel a scheduled or in-progress broadcast. Already-sent messages are not affected.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+
+try {
+    $result = $apiInstance->cancelBroadcast($broadcast_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->cancelBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+
+### Return type
+
+[**\Zernio\Model\CancelBroadcast200Response**](../Model/CancelBroadcast200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `createBroadcast()`
+
+```php
+createBroadcast($create_broadcast_request): \Zernio\Model\CreateBroadcast200Response
+```
+
+Create broadcast draft
+
+Create a broadcast in draft status. Add recipients and then send or schedule it.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$create_broadcast_request = new \Zernio\Model\CreateBroadcastRequest(); // \Zernio\Model\CreateBroadcastRequest
+
+try {
+    $result = $apiInstance->createBroadcast($create_broadcast_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->createBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **create_broadcast_request** | [**\Zernio\Model\CreateBroadcastRequest**](../Model/CreateBroadcastRequest.md)|  | |
+
+### Return type
+
+[**\Zernio\Model\CreateBroadcast200Response**](../Model/CreateBroadcast200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `deleteBroadcast()`
+
+```php
+deleteBroadcast($broadcast_id)
+```
+
+Delete broadcast
+
+Permanently delete a broadcast. Only drafts can be deleted.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+
+try {
+    $apiInstance->deleteBroadcast($broadcast_id);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->deleteBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `getBroadcast()`
+
+```php
+getBroadcast($broadcast_id): \Zernio\Model\GetBroadcast200Response
+```
+
+Get broadcast details
+
+Returns a broadcast with its full configuration and delivery stats.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+
+try {
+    $result = $apiInstance->getBroadcast($broadcast_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->getBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+
+### Return type
+
+[**\Zernio\Model\GetBroadcast200Response**](../Model/GetBroadcast200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `listBroadcastRecipients()`
+
+```php
+listBroadcastRecipients($broadcast_id, $status, $limit, $skip): \Zernio\Model\ListBroadcastRecipients200Response
+```
+
+List broadcast recipients
+
+Returns recipients for a broadcast with individual delivery status. Filter by status.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+$status = 'status_example'; // string
+$limit = 50; // int
+$skip = 0; // int
+
+try {
+    $result = $apiInstance->listBroadcastRecipients($broadcast_id, $status, $limit, $skip);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->listBroadcastRecipients: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+| **status** | **string**|  | [optional] |
+| **limit** | **int**|  | [optional] [default to 50] |
+| **skip** | **int**|  | [optional] [default to 0] |
+
+### Return type
+
+[**\Zernio\Model\ListBroadcastRecipients200Response**](../Model/ListBroadcastRecipients200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `listBroadcasts()`
+
+```php
+listBroadcasts($profile_id, $status, $platform, $limit, $skip): \Zernio\Model\ListBroadcasts200Response
+```
+
+List broadcasts
+
+Returns broadcasts with delivery stats. Filter by status, platform, or profile.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$profile_id = 'profile_id_example'; // string | Filter by profile. Omit to list across all profiles
+$status = 'status_example'; // string
+$platform = 'platform_example'; // string
+$limit = 50; // int
+$skip = 0; // int
+
+try {
+    $result = $apiInstance->listBroadcasts($profile_id, $status, $platform, $limit, $skip);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->listBroadcasts: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **profile_id** | **string**| Filter by profile. Omit to list across all profiles | [optional] |
+| **status** | **string**|  | [optional] |
+| **platform** | **string**|  | [optional] |
+| **limit** | **int**|  | [optional] [default to 50] |
+| **skip** | **int**|  | [optional] [default to 0] |
+
+### Return type
+
+[**\Zernio\Model\ListBroadcasts200Response**](../Model/ListBroadcasts200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `scheduleBroadcast()`
+
+```php
+scheduleBroadcast($broadcast_id, $schedule_broadcast_request): \Zernio\Model\ScheduleBroadcast200Response
+```
+
+Schedule broadcast for later
+
+Schedule a draft broadcast to be sent at a future date and time.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+$schedule_broadcast_request = new \Zernio\Model\ScheduleBroadcastRequest(); // \Zernio\Model\ScheduleBroadcastRequest
+
+try {
+    $result = $apiInstance->scheduleBroadcast($broadcast_id, $schedule_broadcast_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->scheduleBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+| **schedule_broadcast_request** | [**\Zernio\Model\ScheduleBroadcastRequest**](../Model/ScheduleBroadcastRequest.md)|  | |
+
+### Return type
+
+[**\Zernio\Model\ScheduleBroadcast200Response**](../Model/ScheduleBroadcast200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `sendBroadcast()`
+
+```php
+sendBroadcast($broadcast_id): \Zernio\Model\SendBroadcast200Response
+```
+
+Send broadcast now
+
+Immediately start sending a draft broadcast to its recipients.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+
+try {
+    $result = $apiInstance->sendBroadcast($broadcast_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->sendBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+
+### Return type
+
+[**\Zernio\Model\SendBroadcast200Response**](../Model/SendBroadcast200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `updateBroadcast()`
+
+```php
+updateBroadcast($broadcast_id, $update_broadcast_request): \Zernio\Model\UpdateBroadcast200Response
+```
+
+Update broadcast
+
+Update a broadcast's name, message, template, or segment filters. Only draft broadcasts can be updated.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer (JWT) authorization: bearerAuth
+$config = Zernio\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Zernio\Api\BroadcastsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$broadcast_id = 'broadcast_id_example'; // string
+$update_broadcast_request = new \Zernio\Model\UpdateBroadcastRequest(); // \Zernio\Model\UpdateBroadcastRequest
+
+try {
+    $result = $apiInstance->updateBroadcast($broadcast_id, $update_broadcast_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BroadcastsApi->updateBroadcast: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **broadcast_id** | **string**|  | |
+| **update_broadcast_request** | [**\Zernio\Model\UpdateBroadcastRequest**](../Model/UpdateBroadcastRequest.md)|  | [optional] |
+
+### Return type
+
+[**\Zernio\Model\UpdateBroadcast200Response**](../Model/UpdateBroadcast200Response.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

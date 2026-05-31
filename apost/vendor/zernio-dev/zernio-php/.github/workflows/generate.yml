@@ -1,0 +1,182 @@
+name: Regenerate
+
+on:
+  repository_dispatch:
+    types: [openapi-updated]
+  workflow_dispatch:
+
+jobs:
+  generate:
+    name: Regenerate from OpenAPI
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer
+
+      - name: Setup Java (for openapi-generator)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install OpenAPI Generator
+        run: npm install -g @openapitools/openapi-generator-cli
+
+      - name: Fetch latest OpenAPI spec
+        run: |
+          curl -f --retry 5 --retry-delay 2 --retry-all-errors --max-time 60 -o openapi.yaml https://zernio.com/openapi.yaml
+          echo "Fetched OpenAPI spec"
+
+      - name: Generate SDK
+        run: |
+          openapi-generator-cli generate \
+            -i openapi.yaml \
+            -g php \
+            -o . \
+            --skip-validate-spec \
+            --additional-properties=packageName=Zernio,invokerPackage=Zernio,apiPackage=Api,modelPackage=Model \
+            --git-user-id=zernio-dev \
+            --git-repo-id=zernio-php
+
+      - name: Add Late namespace backwards-compat shim
+        run: |
+          # Register a lazy spl_autoloader that aliases any referenced
+          # Late\Foo to Zernio\Foo via class_alias() on first access. This
+          # keeps pre-rebrand users working without having to duplicate
+          # every class into a second namespace.
+          cat > lib/LateAliases.php <<'PHP'
+          <?php
+          /**
+           * Legacy "Late\" namespace support.
+           *
+           * The SDK was originally published under the Late\ namespace and
+           * later rebranded to Zernio\. This autoloader maps any Late\Foo
+           * reference to Zernio\Foo at resolution time via class_alias().
+           *
+           * Loaded automatically via composer.json "autoload.files".
+           */
+
+          spl_autoload_register(function (string $class): void {
+              if (strncmp($class, 'Late\\', 5) !== 0) {
+                  return;
+              }
+              $zernioClass = 'Zernio\\' . substr($class, 5);
+              if (class_exists($zernioClass, true)
+                  || interface_exists($zernioClass, true)
+                  || trait_exists($zernioClass, true)) {
+                  class_alias($zernioClass, $class);
+              }
+          }, true, true);
+          PHP
+
+      - name: Register Late shim in composer.json
+        run: |
+          # Add lib/LateAliases.php to composer autoload "files" so it's
+          # loaded automatically for any project that requires the SDK.
+          jq '.autoload.files = ((.autoload.files // []) + ["lib/LateAliases.php"] | unique)' \
+            composer.json > tmp.json && mv tmp.json composer.json
+
+      - name: Patch README install instructions
+        run: |
+          python3 -c "
+          import re, textwrap
+          with open('README.md', 'r') as f:
+              content = f.read()
+          install_section = textwrap.dedent('''## Installation
+
+          ### Requirements
+
+          PHP 8.1 and later.
+
+          ### Composer
+
+          \`\`\`bash
+          composer require zernio-dev/zernio-php
+          \`\`\`
+
+          Use the \`Zernio\\\\\` namespace. The legacy \`Late\\\\\` namespace is auto-aliased on load for backwards compatibility.''')
+          content = re.sub(r'## Installation & Usage.*?(?=\n## )', install_section + '\n\n', content, flags=re.DOTALL)
+          with open('README.md', 'w') as f:
+              f.write(content)
+          "
+
+      - name: Install dependencies
+        run: composer install --no-interaction
+
+      - name: Run tests
+        run: ./vendor/bin/phpunit
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Get next version
+        if: steps.changes.outputs.has_changes == 'true'
+        id: version
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          NEW_VERSION=$(echo $LATEST_TAG | awk -F. '{printf "v%d.%d.%d", $1, $2, $3+1}' | sed 's/vv/v/')
+          COMPOSER_VERSION=$(echo $NEW_VERSION | sed 's/v//')
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "composer_version=$COMPOSER_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Update composer.json version
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          jq '.version = "${{ steps.version.outputs.composer_version }}"' composer.json > tmp.json && mv tmp.json composer.json || true
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: regenerate from OpenAPI spec
+
+          - Auto-generated SDK updates
+          - Version: ${{ steps.version.outputs.new_version }}"
+          # Retry with rebase to survive concurrent dispatches that land
+          # back-to-back pushes to main.
+          for attempt in 1 2 3; do
+            if git push; then break; fi
+            echo "Push attempt $attempt failed; rebasing and retrying..."
+            git pull --rebase origin main
+            sleep $((attempt * 5))
+          done
+
+      - name: Create GitHub Release
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.new_version }}
+          name: ${{ steps.version.outputs.new_version }}
+          generate_release_notes: true
+          body: |
+            ## Auto-generated SDK Update
+
+            ```bash
+            composer require zernio-dev/zernio-php
+            ```
+
+            Use the `Zernio\` namespace. The legacy `Late\` namespace remains
+            available for backwards compatibility via runtime class aliasing.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
