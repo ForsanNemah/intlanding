@@ -449,6 +449,52 @@
 
 
             <!-- ============================= -->
+            <!-- Educational Institution -->
+            <!-- ============================= -->
+
+            <div class="field-group">
+                <label for="Institution" class="form-label fw-bold">
+                    المجال الدراسي <span class="text-danger">*</span>
+                </label>
+                <div class="input-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10.5 12 5l9 5.5-9 5.5-9-5.5Zm0 0v6.5L12 22l9-5V10.5M12 15.5V22"/></svg>
+                    <select
+                        id="Institution"
+                        name="entry.1494061078"
+                        class="form-select form-select-lg"
+                        required
+                    >
+                        <option value="" selected disabled>
+                            اختر المجال  الدراسي
+                        </option>
+                        <option value="مدرسة">مدرسة</option>
+                        <option value="جامعة">جامعة</option>
+                        <option value="معهد">معهد</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="field-group">
+                <label for="Year" class="form-label fw-bold">
+                    العام الدراسي <span class="text-danger">*</span>
+                </label>
+                <div class="input-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10.5 12 5l9 5.5-9 5.5-9-5.5Zm0 0v6.5L12 22l9-5V10.5M12 15.5V22"/></svg>
+                    <input
+                        type="text"
+                        id="Year"
+                        name="entry.646189226"
+                        class="form-control form-control-lg"
+                        placeholder="اكتب العام الدراسي"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+            </div>
+
+
+            <!-- ============================= -->
             <!-- City -->
             <!-- ============================= -->
 
